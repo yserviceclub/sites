@@ -1,0 +1,416 @@
+/* ************************************
+------------------------------------
+ main menu colors 
+ -----------------------------------
+ **************************************/
+
+
+
+/* 1st menu item 
+******************/
+.navbar nav>.menu>li:nth-child(1)>a:hover,
+.navbar nav>.menu>li:nth-child(1)>a:focus,
+.navbar nav>.menu>.active:nth-child(1)>a,
+.navbar nav>.menu>.active:nth-child(1)>a,
+.navbar nav>.menu>.active-trail:nth-child(1)>a {
+    background-color: rgb(210, 203, 216);
+}
+
+/* dropdown background */
+.navbar nav>.menu>li:nth-child(1).expanded.dropdown.open>ul {
+    background-color: #DED7E5;
+    border: none;
+    -webkit-box-shadow: 0 6px 12px -5px rgba(0,0,0,0.175);
+    box-shadow: 0 6px 12px -5px rgba(0,0,0,0.175);
+}
+
+/* dropdown items */
+.navbar nav>.menu>li:nth-child(1)>ul.dropdown-menu>li>a:hover,
+.navbar nav>.menu>li:nth-child(1)>ul.dropdown-menu>li>a:focus,
+.navbar nav>.menu>li:nth-child(1)>ul.dropdown-menu>li>a:active,
+.navbar nav>.menu>li:nth-child(1)>ul.dropdown-menu>li>a:visited,
+.navbar nav>.menu>li:nth-child(1)>ul.dropdown-menu>li>a.active:hover,
+.navbar nav>.menu>li:nth-child(1)>ul.dropdown-menu>li>a.active:focus {
+    background-color: #C4BDC9;
+}
+
+
+/* 2nd menu item 
+*****************/
+.navbar nav>.menu>li:nth-child(2)>a:hover,
+.navbar nav>.menu>li:nth-child(2)>a:focus,
+.navbar nav>.menu>.active:nth-child(2)>a,
+.navbar nav>.menu>.active:nth-child(2)>a,
+.navbar nav>.menu>.active-trail:nth-child(2)>a {
+    background-color: rgb(202, 224, 221);
+}
+
+/* dropdown background */
+.navbar nav>.menu>li:nth-child(2).expanded.dropdown.open>ul {
+    background-color: rgb(216, 236, 233);
+    border: none;
+    -webkit-box-shadow: 0 6px 12px -5px rgba(0,0,0,0.175);
+    box-shadow: 0 6px 12px -5px rgba(0,0,0,0.175);
+}
+
+/* dropdown items */
+.navbar nav>.menu>li:nth-child(2)>ul.dropdown-menu>li>a:hover,
+.navbar nav>.menu>li:nth-child(2)>ul.dropdown-menu>li>a:focus,
+.navbar nav>.menu>li:nth-child(2)>ul.dropdown-menu>li>a:active,
+.navbar nav>.menu>li:nth-child(2)>ul.dropdown-menu>li>a:visited,
+.navbar nav>.menu>li:nth-child(2)>ul.dropdown-menu>li>a.active:hover,
+.navbar nav>.menu>li:nth-child(2)>ul.dropdown-menu>li>a.active:focus {
+    background-color: rgb(169, 208, 203);
+}
+
+/* 3rd menu item 
+******************/
+.navbar nav>.menu>li:nth-child(3)>a:hover,
+.navbar nav>.menu>li:nth-child(3)>a:focus,
+.navbar nav>.menu>.active:nth-child(3)>a,
+.navbar nav>.menu>.active:nth-child(3)>a,
+.navbar nav>.menu>.active-trail:nth-child(3)>a {
+    background-color: #F6E3BC;
+}
+
+/* dropdown background */
+.navbar nav>.menu>li:nth-child(3).expanded.dropdown.open>ul {
+    background-color: #FFEBC3;
+    border: none;
+    -webkit-box-shadow: 0 6px 12px -5px rgba(0,0,0,0.175);
+    box-shadow: 0 6px 12px -5px rgba(0,0,0,0.175);
+}
+
+/* dropdown items */
+.navbar nav>.menu>li:nth-child(3)>ul.dropdown-menu>li>a:hover,
+.navbar nav>.menu>li:nth-child(3)>ul.dropdown-menu>li>a:focus,
+.navbar nav>.menu>li:nth-child(3)>ul.dropdown-menu>li>a:active,
+.navbar nav>.menu>li:nth-child(3)>ul.dropdown-menu>li>a:visited,
+.navbar nav>.menu>li:nth-child(3)>ul.dropdown-menu>li>a.active:hover,
+.navbar nav>.menu>li:nth-child(3)>ul.dropdown-menu>li>a.active:focus {
+    background-color: #E0CFAB;
+}
+
+
+/* 4th menu item 
+*****************/
+.navbar nav>.menu>li:nth-child(4)>a:hover,
+.navbar nav>.menu>li:nth-child(4)>a:focus,
+.navbar nav>.menu>.active:nth-child(4)>a,
+.navbar nav>.menu>.active:nth-child(4)>a,
+.navbar nav>.menu>.active-trail:nth-child(4)>a {
+    background-color: #CCE4C8;
+}
+
+/* dropdown background */
+.navbar nav>.menu>li:nth-child(4).expanded.dropdown.open>ul {
+    background-color: #D4EDD0;
+    border: none;
+    -webkit-box-shadow: 0 6px 12px -5px rgba(0,0,0,0.175);
+    box-shadow: 0 6px 12px -5px rgba(0,0,0,0.175);
+}
+
+/* dropdown items */
+.navbar nav>.menu>li:nth-child(4)>ul.dropdown-menu>li>a:hover,
+.navbar nav>.menu>li:nth-child(4)>ul.dropdown-menu>li>a:focus,
+.navbar nav>.menu>li:nth-child(4)>ul.dropdown-menu>li>a:active,
+.navbar nav>.menu>li:nth-child(4)>ul.dropdown-menu>li>a:visited,
+.navbar nav>.menu>li:nth-child(4)>ul.dropdown-menu>li>a.active:hover,
+.navbar nav>.menu>li:nth-child(4)>ul.dropdown-menu>li>a.active:focus {
+    background-color: #B9CEB5;
+}
+
+
+/* 5th menu item 
+******************/
+.navbar nav>.menu>li:nth-child(5)>a:hover,
+.navbar nav>.menu>li:nth-child(5)>a:focus,
+.navbar nav>.menu>.active:nth-child(5)>a,
+.navbar nav>.menu>.active:nth-child(5)>a,
+.navbar nav>.menu>.active-trail:nth-child(5)>a {
+    background-color: #EEB9B0;
+}
+
+/* dropdown background */
+.navbar nav>.menu>li:nth-child(5).expanded.dropdown.open>ul {
+    background-color: #F7C0B7;
+    border: none;
+    -webkit-box-shadow: 0 6px 12px -5px rgba(0,0,0,0.175);
+    box-shadow: 0 6px 12px -5px rgba(0,0,0,0.175);
+}
+
+/* dropdown items */
+.navbar nav>.menu>li:nth-child(5)>ul.dropdown-menu>li>a:hover,
+.navbar nav>.menu>li:nth-child(5)>ul.dropdown-menu>li>a:focus,
+.navbar nav>.menu>li:nth-child(5)>ul.dropdown-menu>li>a:active,
+.navbar nav>.menu>li:nth-child(5)>ul.dropdown-menu>li>a:visited,
+.navbar nav>.menu>li:nth-child(5)>ul.dropdown-menu>li>a.active:hover,
+.navbar nav>.menu>li:nth-child(5)>ul.dropdown-menu>li>a.active:focus {
+    background-color: #D8A8A0;
+}
+
+
+/* 6th menu item 
+*****************/
+.navbar nav>.menu>li:nth-child(6)>a:hover,
+.navbar nav>.menu>li:nth-child(6)>a:focus,
+.navbar nav>.menu>.active:nth-child(6)>a,
+.navbar nav>.menu>.active:nth-child(6)>a,
+.navbar nav>.menu>.active-trail:nth-child(6)>a {
+    background-color: #99BBD4;
+}
+
+/* dropdown background */
+.navbar nav>.menu>li:nth-child(6).expanded.dropdown.open>ul {
+    background-color: #9FC3DD;
+    border: none;
+    -webkit-box-shadow: 0 6px 12px -5px rgba(0,0,0,0.175);
+    box-shadow: 0 6px 12px -5px rgba(0,0,0,0.175);
+}
+
+/* dropdown items */
+.navbar nav>.menu>li:nth-child(6)>ul.dropdown-menu>li>a:hover,
+.navbar nav>.menu>li:nth-child(6)>ul.dropdown-menu>li>a:focus,
+.navbar nav>.menu>li:nth-child(6)>ul.dropdown-menu>li>a:active,
+.navbar nav>.menu>li:nth-child(6)>ul.dropdown-menu>li>a:visited,
+.navbar nav>.menu>li:nth-child(6)>ul.dropdown-menu>li>a.active:hover,
+.navbar nav>.menu>li:nth-child(6)>ul.dropdown-menu>li>a.active:focus {
+    background-color: #89A8BE;
+}
+
+
+
+
+/*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*/
+/**************************************************
+--------------------------------------------------
+media queries 
+
+._ _   _   _| o  _    _.      _  ._ o  _   _
+| | | (/_ (_| | (_|  (_| |_| (/_ |  | (/_ _>
+                       |
+--------------------------------------------------
+Extra small devices (phones, less than 768px) are 
+default for Bootstrap all other device widths use 
+the following media queries
+**************************************************/
+
+
+/* -------------------------------------
+Small devices (tablets, 768px and up) 
+_       _
+ | |_  |_|  _  _ _ 
+ | |_| |_| |_) _\_ 
+           |       
+--------------------------------------*/
+/*@media (max-width: 768px) {*/
+
+    /* 1st menu item 
+    ******************/
+    .navbar nav>.menu>li:nth-child(1)>a {
+        background-color: rgba(210, 203, 216, 0.35);
+    }
+
+    .navbar nav>.menu>li:nth-child(1)>a:hover,
+    .navbar nav>.menu>li:nth-child(1)>a:focus,
+    .navbar nav>.menu>.active:nth-child(1)>a,
+    .navbar nav>.menu>.active:nth-child(1)>a,
+    .navbar nav>.menu>.active-trail:nth-child(1)>a {
+        background-color: rgb(210, 203, 216);
+    }
+
+    /* dropdown background */
+    .navbar nav>.menu>li:nth-child(1).expanded.dropdown.open>ul {
+        background-color: #DED7E5;
+        border: none;
+    	-webkit-box-shadow: 0 6px 12px -5px rgba(0,0,0,0.175);
+    	box-shadow: 0 6px 12px -5px rgba(0,0,0,0.175);
+    }
+
+    /* dropdown items */
+    .navbar nav>.menu>li:nth-child(1)>ul.dropdown-menu>li>a:hover,
+    .navbar nav>.menu>li:nth-child(1)>ul.dropdown-menu>li>a:focus,
+    .navbar nav>.menu>li:nth-child(1)>ul.dropdown-menu>li>a:active,
+    .navbar nav>.menu>li:nth-child(1)>ul.dropdown-menu>li>a:visited,
+    .navbar nav>.menu>li:nth-child(1)>ul.dropdown-menu>li>a.active:hover,
+    .navbar nav>.menu>li:nth-child(1)>ul.dropdown-menu>li>a.active:focus {
+        background-color: #C4BDC9;
+    }
+
+
+    /* 2nd menu item 
+    *****************/
+    .navbar nav>.menu>li:nth-child(2)>a {
+        background-color: rgba(202, 224, 221, 0.35);
+    }
+
+    .navbar nav>.menu>li:nth-child(2)>a:hover,
+    .navbar nav>.menu>li:nth-child(2)>a:focus,
+    .navbar nav>.menu>.active:nth-child(2)>a,
+    .navbar nav>.menu>.active:nth-child(2)>a,
+    .navbar nav>.menu>.active-trail:nth-child(2)>a {
+        background-color: rgb(202, 224, 221);
+    }
+
+    /* dropdown background */
+    .navbar nav>.menu>li:nth-child(2).expanded.dropdown.open>ul {
+        background-color: rgb(216, 236, 233);
+        border: none;
+    	-webkit-box-shadow: 0 6px 12px -5px rgba(0,0,0,0.175);
+    	box-shadow: 0 6px 12px -5px rgba(0,0,0,0.175);
+    }
+
+    /* dropdown items */
+    .navbar nav>.menu>li:nth-child(2)>ul.dropdown-menu>li>a:hover,
+    .navbar nav>.menu>li:nth-child(2)>ul.dropdown-menu>li>a:focus,
+    .navbar nav>.menu>li:nth-child(2)>ul.dropdown-menu>li>a:active,
+    .navbar nav>.menu>li:nth-child(2)>ul.dropdown-menu>li>a:visited,
+    .navbar nav>.menu>li:nth-child(2)>ul.dropdown-menu>li>a.active:hover,
+    .navbar nav>.menu>li:nth-child(2)>ul.dropdown-menu>li>a.active:focus {
+        background-color: rgb(169, 208, 203);
+    }
+
+    /* 3rd menu item 
+    ******************/
+    .navbar nav>.menu>li:nth-child(3)>a {
+        background-color: rgba(246, 227, 188, 0.35);
+    }
+
+    .navbar nav>.menu>li:nth-child(3)>a:hover,
+    .navbar nav>.menu>li:nth-child(3)>a:focus,
+    .navbar nav>.menu>.active:nth-child(3)>a,
+    .navbar nav>.menu>.active:nth-child(3)>a,
+    .navbar nav>.menu>.active-trail:nth-child(3)>a {
+        background-color: #F6E3BC;
+    }
+
+    /* dropdown background */
+    .navbar nav>.menu>li:nth-child(3).expanded.dropdown.open>ul {
+        background-color: #FFEBC3;
+        border: none;
+    	-webkit-box-shadow: 0 6px 12px -5px rgba(0,0,0,0.175);
+    	box-shadow: 0 6px 12px -5px rgba(0,0,0,0.175);
+    }
+
+    /* dropdown items */
+    .navbar nav>.menu>li:nth-child(3)>ul.dropdown-menu>li>a:hover,
+    .navbar nav>.menu>li:nth-child(3)>ul.dropdown-menu>li>a:focus,
+    .navbar nav>.menu>li:nth-child(3)>ul.dropdown-menu>li>a:active,
+    .navbar nav>.menu>li:nth-child(3)>ul.dropdown-menu>li>a:visited,
+    .navbar nav>.menu>li:nth-child(3)>ul.dropdown-menu>li>a.active:hover,
+    .navbar nav>.menu>li:nth-child(3)>ul.dropdown-menu>li>a.active:focus {
+        background-color: #E0CFAB;
+    }
+
+
+    /* 4th menu item 
+    *****************/
+    .navbar nav>.menu>li:nth-child(4)>a {
+        background-color: rgba(204, 228, 200, 0.35);
+    }
+
+    .navbar nav>.menu>li:nth-child(4)>a:hover,
+    .navbar nav>.menu>li:nth-child(4)>a:focus,
+    .navbar nav>.menu>.active:nth-child(4)>a,
+    .navbar nav>.menu>.active:nth-child(4)>a,
+    .navbar nav>.menu>.active-trail:nth-child(4)>a {
+        background-color: #CCE4C8;
+    }
+
+    /* dropdown background */
+    .navbar nav>.menu>li:nth-child(4).expanded.dropdown.open>ul {
+        background-color: #D4EDD0;
+        border: none;
+    	-webkit-box-shadow: 0 6px 12px -5px rgba(0,0,0,0.175);
+    	box-shadow: 0 6px 12px -5px rgba(0,0,0,0.175);
+    }
+
+    /* dropdown items */
+    .navbar nav>.menu>li:nth-child(4)>ul.dropdown-menu>li>a:hover,
+    .navbar nav>.menu>li:nth-child(4)>ul.dropdown-menu>li>a:focus,
+    .navbar nav>.menu>li:nth-child(4)>ul.dropdown-menu>li>a:active,
+    .navbar nav>.menu>li:nth-child(4)>ul.dropdown-menu>li>a:visited,
+    .navbar nav>.menu>li:nth-child(4)>ul.dropdown-menu>li>a.active:hover,
+    .navbar nav>.menu>li:nth-child(4)>ul.dropdown-menu>li>a.active:focus {
+        background-color: #B9CEB5;
+    }
+
+
+    /* 5th menu item 
+    ******************/
+    .navbar nav>.menu>li:nth-child(5)>a {
+        background-color: rgba(238, 185, 176, 0.25);
+    }
+
+    .navbar nav>.menu>li:nth-child(5)>a:hover,
+    .navbar nav>.menu>li:nth-child(5)>a:focus,
+    .navbar nav>.menu>.active:nth-child(5)>a,
+    .navbar nav>.menu>.active:nth-child(5)>a,
+    .navbar nav>.menu>.active-trail:nth-child(5)>a {
+        background-color: #EEB9B0;
+    }
+
+    /* dropdown background */
+    .navbar nav>.menu>li:nth-child(5).expanded.dropdown.open>ul {
+        background-color: #F7C0B7;
+        border: none;
+    	-webkit-box-shadow: 0 6px 12px -5px rgba(0,0,0,0.175);
+    	box-shadow: 0 6px 12px -5px rgba(0,0,0,0.175);
+    }
+
+    /* dropdown items */
+    .navbar nav>.menu>li:nth-child(5)>ul.dropdown-menu>li>a:hover,
+    .navbar nav>.menu>li:nth-child(5)>ul.dropdown-menu>li>a:focus,
+    .navbar nav>.menu>li:nth-child(5)>ul.dropdown-menu>li>a:active,
+    .navbar nav>.menu>li:nth-child(5)>ul.dropdown-menu>li>a:visited,
+    .navbar nav>.menu>li:nth-child(5)>ul.dropdown-menu>li>a.active:hover,
+    .navbar nav>.menu>li:nth-child(5)>ul.dropdown-menu>li>a.active:focus {
+        background-color: #D8A8A0;
+    }
+
+
+    /* 6th menu item 
+    *****************/
+    .navbar nav>.menu>li:nth-child(6)>a {
+        background-color: rgba(153, 187, 212, 0.35);
+    }
+
+    .navbar nav>.menu>li:nth-child(6)>a:hover,
+    .navbar nav>.menu>li:nth-child(6)>a:focus,
+    .navbar nav>.menu>.active:nth-child(6)>a,
+    .navbar nav>.menu>.active:nth-child(6)>a,
+    .navbar nav>.menu>.active-trail:nth-child(6)>a {
+        background-color: #99BBD4;
+    }
+
+    /* dropdown background */
+    .navbar nav>.menu>li:nth-child(6).expanded.dropdown.open>ul {
+        background-color: #9FC3DD;
+        border: none;
+    	-webkit-box-shadow: 0 6px 12px -5px rgba(0,0,0,0.175);
+    	box-shadow: 0 6px 12px -5px rgba(0,0,0,0.175);
+    }
+
+    /* dropdown items */
+    .navbar nav>.menu>li:nth-child(6)>ul.dropdown-menu>li>a:hover,
+    .navbar nav>.menu>li:nth-child(6)>ul.dropdown-menu>li>a:focus,
+    .navbar nav>.menu>li:nth-child(6)>ul.dropdown-menu>li>a:active,
+    .navbar nav>.menu>li:nth-child(6)>ul.dropdown-menu>li>a:visited,
+    .navbar nav>.menu>li:nth-child(6)>ul.dropdown-menu>li>a.active:hover,
+    .navbar nav>.menu>li:nth-child(6)>ul.dropdown-menu>li>a.active:focus {
+        background-color: #89A8BE;
+    }
+
+}

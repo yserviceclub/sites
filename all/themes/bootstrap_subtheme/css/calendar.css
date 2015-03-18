@@ -1,0 +1,169 @@
+/* 
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXX calendar styling  XXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+*/
+
+/* subhead for sidebar upcoming events */
+aside section .upcoming-events.subhead {
+	margin-bottom: 0;
+}
+.upcoming-events.subhead,
+.second-level-articles .pager,
+.event-list .pager {
+	background-color: #F6E3BC;
+	padding-left: 10px;
+	color: #B0955D;
+}
+.second-level-articles .pager {
+	margin: -19px;
+}
+.event-list .pager {
+	margin-top: -20px;
+}
+.second-level-articles .pager li>a,
+.event-list .pager li>a {
+	background-color: #FCF8EA;
+}
+.second-level-articles .pager li>a:hover,
+.event-list .pager li>a:hover {
+	background-color: #FFFEF5;
+}
+
+/* sidebar header */
+.block-views .view .date-nav-wrapper .date-heading h3 {
+	font-size: 15px;
+}
+
+
+/* header height */
+.view .date-nav-wrapper .date-nav {
+	height: 40px;
+
+}
+
+/* position buttons */
+.view .date-nav-wrapper .date-prev {
+	left: 0;
+	right: auto;
+}
+
+/* remove image from multi-day bar */
+td.multi-day img {
+	display: none;
+}
+td.today {
+	background-color: pink;
+}
+
+/* links to events in the sidebar */
+.view-display-id-block_events .btn-events a:hover {
+	background-color: #A3A3A3;
+}
+.view-display-id-block_events .btn-events a {
+	background-color: #EFAEAC;
+	padding-left: 3px;
+	color: white;
+	text-align: left;
+	display: block;
+}
+
+/* articles below calendar */
+.view-calendar.second-level-articles {
+	margin-top: 50px;
+}
+
+.well-event {
+	background-color: #FFFEF5;
+}
+
+
+
+
+
+
+
+/*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*/
+/**************************************************
+--------------------------------------------------
+media queries 
+
+._ _   _   _| o  _    _.      _  ._ o  _   _
+| | | (/_ (_| | (_|  (_| |_| (/_ |  | (/_ _>
+                       |
+--------------------------------------------------
+Extra small devices (phones, less than 768px) are 
+default for Bootstrap all other device widths use 
+the following media queries
+**************************************************/
+
+
+
+/* -------------------------------------
+Tiny devices (350px and up) 
+_   _   _
+_| |_  | |  _  _ _ 
+_|  _| |_| |_) _\_ 
+           |       
+--------------------------------------*/
+@media (min-width: 355px) {
+
+
+
+}
+
+
+
+/* -------------------------------------
+Small devices (tablets, 768px and up) 
+_       _
+ | |_  |_|  _  _ _ 
+ | |_| |_| |_) _\_ 
+           |       
+--------------------------------------*/
+@media (min-width: 768px) {
+
+
+
+
+}
+
+/* -------------------------------------
+ Medium devices (desktops, 992px and up) 
+ _   _   _  
+|_| |_|  _|  _  _ _ 
+  |   | |_  |_) _\_ 
+            |       
+ ----------------------------------------*/
+@media (min-width: 992px) {
+
+
+
+}
+
+/* -----------------------------------------
+Large devices (large desktops, 1200px and up) 
+   _   _   _    
+|  _| | | | |  _  _ _ 
+| |_  |_| |_| |_) _\_ 
+              |       
+----------------------------------------------*/
+@media (min-width: 1200px) {
+
+
+
+
+
+}

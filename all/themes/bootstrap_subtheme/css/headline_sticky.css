@@ -1,0 +1,151 @@
+/* ************************************
+------------------------------------
+ headline sticky articles 
+ -----------------------------------
+ **************************************/
+
+/* sticky headlines block */
+.sticky-headlines {
+}
+/* middle col */
+.sticky-headlines div.row > div.col:nth-of-type(2) {
+}
+/* the 'row' from Views */
+.sticky-headlines div.row > div.col > div.thumbnail {
+  padding: 10px;
+}
+/* all the headline labels */
+.sticky-headlines div.row > div.col > div.thumbnail > h6 {
+  font-family: "Architects Daughter", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 2px;
+  padding-left: 10px;
+  margin: -10px;
+  margin-bottom: 10px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+/* EVENT - #F6E3BC */
+.sticky-headlines div.row > div.col > div.thumbnail > h6.headline-Event {
+  background-color: rgba(246, 227, 188, 1);
+  border-color: #F0CF8C;
+  color: #D5AC57;
+}
+
+/* NEWS - #D2CBD8 */
+.sticky-headlines div.row > div.col > div.thumbnail > h6.headline-News {
+  background-color: rgba(210, 203, 216, 1);
+  border-color: #BCAFC7;
+  color: #9B86AC;
+}
+
+
+/* PROJECT - #CAE0DD */
+.sticky-headlines div.row > div.col > div.thumbnail > h6.headline-Project {
+  background-color: rgba(202, 224, 221, 1);
+  border-color: #9CC5BF;
+  color: #7BA49E;
+}
+
+/* margin LEFT + RIGHT for small-teaser news images */
+.sticky-headlines div.row > div.col > div.thumbnail > div > div.headline-image {
+  margin-right: 10px;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+.sticky-headlines div.row > div.col > div.thumbnail > div > .sticky-title {
+  margin-bottom: 0;
+}
+
+
+
+
+
+
+/*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*/
+/**************************************************
+--------------------------------------------------
+media queries 
+
+._ _   _   _| o  _    _.      _  ._ o  _   _
+| | | (/_ (_| | (_|  (_| |_| (/_ |  | (/_ _>
+                       |
+--------------------------------------------------
+Extra small devices (phones, less than 768px) are 
+default for Bootstrap all other device widths use 
+the following media queries
+**************************************************/
+
+
+
+/* -------------------------------------
+Tiny devices (350px and up) 
+_   _   _
+_| |_  | |  _  _ _ 
+_|  _| |_| |_) _\_ 
+           |       
+--------------------------------------*/
+@media (min-width: 355px) {
+
+
+
+}
+
+
+
+/* -------------------------------------
+Small devices (tablets, 768px and up) 
+_       _
+ | |_  |_|  _  _ _ 
+ | |_| |_| |_) _\_ 
+           |       
+--------------------------------------*/
+@media (min-width: 768px) {
+
+
+
+
+}
+
+/* -------------------------------------
+ Medium devices (desktops, 992px and up) 
+ _   _   _  
+|_| |_|  _|  _  _ _ 
+  |   | |_  |_) _\_ 
+            |       
+ ----------------------------------------*/
+@media (min-width: 992px) {
+
+
+
+}
+
+/* -----------------------------------------
+Large devices (large desktops, 1200px and up) 
+   _   _   _    
+|  _| | | | |  _  _ _ 
+| |_  |_| |_| |_) _\_ 
+              |       
+----------------------------------------------*/
+@media (min-width: 1200px) {
+
+
+
+
+
+}

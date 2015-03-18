@@ -1,0 +1,129 @@
+/* ***************************
+******************************
+	footer 	
+*******************************/
+
+/* powered by Drupal */
+#block-system-powered-by span {
+	position: absolute;
+	bottom: 5px;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html {
+  /*position: relative;*/
+  min-height: 100%;
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  /* Margin bottom by footer height */
+  padding-bottom: 163px;
+}
+.footer {
+	border: none;
+	text-align: center;
+	background: url(../logos/footer-arc.png) center 100% no-repeat;
+	background-size: contain;
+  position: absolute;
+  bottom: 0;
+  /*width: 1746px;*/
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 163px;
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+
+
+
+
+
+/*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*/
+/**************************************************
+--------------------------------------------------
+media queries 
+
+._ _   _   _| o  _    _.      _  ._ o  _   _
+| | | (/_ (_| | (_|  (_| |_| (/_ |  | (/_ _>
+                       |
+--------------------------------------------------
+Extra small devices (phones, less than 768px) are 
+default for Bootstrap all other device widths use 
+the following media queries
+**************************************************/
+
+
+
+/* -------------------------------------
+Tiny devices (350px and up) 
+_   _   _
+_| |_  | |  _  _ _ 
+_|  _| |_| |_) _\_ 
+           |       
+--------------------------------------*/
+@media (min-width: 355px) {
+
+
+
+}
+
+
+
+/* -------------------------------------
+Small devices (tablets, 768px and up) 
+_       _
+ | |_  |_|  _  _ _ 
+ | |_| |_| |_) _\_ 
+           |       
+--------------------------------------*/
+@media (min-width: 768px) {
+
+
+
+
+}
+
+/* -------------------------------------
+ Medium devices (desktops, 992px and up) 
+ _   _   _  
+|_| |_|  _|  _  _ _ 
+  |   | |_  |_) _\_ 
+            |       
+ ----------------------------------------*/
+@media (min-width: 992px) {
+
+
+
+}
+
+/* -----------------------------------------
+Large devices (large desktops, 1200px and up) 
+   _   _   _    
+|  _| | | | |  _  _ _ 
+| |_  |_| |_| |_) _\_ 
+              |       
+----------------------------------------------*/
+@media (min-width: 1200px) {
+
+
+
+
+
+}
