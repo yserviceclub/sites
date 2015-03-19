@@ -1,0 +1,9 @@
+name = Bootstrap - Photo Gallery
+description = "Allows you to create an appealing bootstrap-based photo gallery using views."
+core = 7.x
+package = bootstrap
+
+dependencies[] = jquery_update
+dependencies[] = views
+
+files[] = views_bootstrap_gallery_plugin_style_bootstrap_gallery.inc

@@ -1,0 +1,368 @@
+/********************************
+custom styles for bootstrap 3
+ _ _|_    |  _   _
+_>  |_ \| | (/_ _>
+       _|
+. . . . . . . . . . . . . . . . .
+*********************************/
+
+/*handwriting fonts*/
+@import url(http://fonts.googleapis.com/css?family=Amatic+SC:400,700);
+@import url(http://fonts.googleapis.com/css?family=Architects+Daughter);
+/*Title font*/
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300);
+/*texts font*/
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+
+
+body {
+	background-color: #F8F4ED;
+	font-family: 'Droid Sans', arial, sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+}
+img {
+    border: 0;
+    max-width: 100%;
+    height: 100%;
+}
+/* try to make firefox accept a max-width % for img */
+.make-responsive {
+	max-width: 100%;
+}
+.field-content
+header#page-header {
+	margin-bottom: 30px;
+}
+
+
+/* *********************
+--------------------
+typography and Layout
+-----------------------
+*************************** */
+
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+font-family: 'Oswald', sans-serif; /* titles typeface */
+}
+
+
+/* ------------------------------ */
+/* label for read more link */
+.label-info {
+	background-color: #678BAE;
+}
+.label a {
+	color: white;
+}
+/* ------------------------------ */
+
+/* body text margin on news article full text page */
+.field-name-body,
+.field-name-field-product-description {
+	margin-top: 15px;
+}
+
+
+
+/*
+|------------------------------|
+|	thumbnail content views    |
+|------------------------------|
+*/
+.link_to_content {
+	color: #777777;
+}
+.link_to_content:hover {
+	text-decoration: none;
+	color: black;
+}
+/* body text margins on frontpage for teasers */
+.bodytext-margin {
+	margin-top: 5px;
+	margin-bottom: 0;
+}
+/* margin LEFT + RIGHT for small-teaser frontpage images */
+.teaser-image {
+  margin-right: 10px;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+div.view-frontpage div.thumbnail {
+	background-color: transparent;
+	border: none;
+	border-top: 1px solid rgba(214, 211, 206, 1);
+	padding: 0;
+	padding-top: 10px;
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+div.view-frontpage div.thumbnail h4 {
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+.post-date {
+	font-style: italic;
+}
+
+
+/*
+|----------------------|
+|	maintenance_page   |
+|----------------------|
+*/
+body.maintenance-page {
+	text-align: center;
+}
+body.maintenance-page  .second-paragraph {
+	margin-top: 10px;
+}
+
+
+
+
+/*
+|--------------|
+|	taxonomy   |
+|--------------|
+*/
+/* display a taxonomy page */
+.taxonomy-term > div > div.taxonomy-term-description {
+	margin-top: 20px;
+}
+
+/* no content with term */
+#block-system-main > div.term-listing-heading + p {
+	margin-top: 20px;
+	font-style: italic;
+}
+
+
+/*
+|--------------|
+|	facebook   |
+|--------------|
+*/
+
+/* fix space around facebook block */
+section#block-fb-social-fb-like {
+	margin: 10px 0 20px;
+}
+
+
+
+/*
+|--------------|
+|	sidebar    |
+|--------------|
+*/
+.region-sidebar-first .view-content a {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 700;
+}
+
+/* sidebar title h2 */
+h2.sidebar-header {
+	font-family: 'Amatic SC', sans-serif;
+	font-weight: 700;
+	border-bottom: 1px solid rgba(214, 211, 206, 1);
+	border-top: 1px solid rgba(172, 170, 168, 1);
+	margin-bottom: 10px;
+	margin-top: 0;
+	padding-left: 10px;
+}
+h2.sidebar-header.project {
+	background-color: #CAE0DD;
+	color: #51867F;
+	border-color: #BBDBD7;
+	border-bottom: 1px solid rgba(214, 211, 206, 1);
+	border-top: 1px solid rgba(172, 170, 168, 1);
+}
+h2.sidebar-header.event {
+	margin-top: 15px;
+	margin-bottom: 0;
+	background-color: #F6E3BC;
+	color: #51867F;
+	border-color: #D5AC57;
+	border-bottom: 1px solid rgba(214, 211, 206, 1);
+	border-top: 1px solid rgba(172, 170, 168, 1);
+}
+
+.region-sidebar-first .media-list {
+	padding-top: 5px;
+}
+
+.media-list > .media img {
+	border: 1px solid #ACA280;
+}
+.country-name > a {
+	color: #51867F;
+}
+.flag {
+	box-shadow: 0 0 10px 0 black;
+}
+
+
+
+/* 
+|------------|
+|	images   |
+|------------|
+
+/* helps to make inserted images responsive */
+img {
+	/* otherwise the height is set to 100% and only the width will shrink with viewport */
+	height: inherit;
+}
+
+/* image caption */
+.field-name-field-image-caption {
+	font-size: 12px;
+	margin: 10px 0 20px 0;
+}
+
+/* float images in content */
+.floatleft {
+  clear: both;
+  float: left;
+  padding: 4px 10px 4px 0;
+}
+
+.floatright {
+  clear: both;
+  float: right;
+  padding: 4px 0 4px 10px;
+}
+
+/* ----------
+	world spinning
+	----- */
+/* make thumbnail background transparent */
+.world-spinning .thumbnail {
+	background-color: transparent;
+	border: none;
+}
+
+/* ------------
+XXXXXXXXXXXXXXXXXX
+	news page
+XXXXXXXXXXXXXXXXXXX
+-------------- */
+.old-news {
+	margin-top: 20px;
+	padding-top: 20px;
+}
+/* second level news articles */
+.second-level-articles div div .row .col {
+	margin-bottom: 50px;
+}
+
+
+
+/* 
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXX Our motto side-bsr block  XXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+*/
+
+.well.motto {
+	background-color: #FDFAF3;
+	border: 1px solid #EAE1D2;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*/
+/**************************************************
+--------------------------------------------------
+media queries 
+
+._ _   _   _| o  _    _.      _  ._ o  _   _
+| | | (/_ (_| | (_|  (_| |_| (/_ |  | (/_ _>
+                       |
+--------------------------------------------------
+Extra small devices (phones, less than 768px) are 
+default for Bootstrap all other device widths use 
+the following media queries
+**************************************************/
+
+
+
+/* -------------------------------------
+Tiny devices (350px and up) 
+_   _   _
+_| |_  | |  _  _ _ 
+_|  _| |_| |_) _\_ 
+           |       
+--------------------------------------*/
+@media (min-width: 355px) {
+
+
+
+}
+
+
+
+/* -------------------------------------
+Small devices (tablets, 768px and up) 
+_       _
+ | |_  |_|  _  _ _ 
+ | |_| |_| |_) _\_ 
+           |       
+--------------------------------------*/
+@media (min-width: 768px) {
+
+
+
+
+}
+
+/* -------------------------------------
+ Medium devices (desktops, 992px and up) 
+ _   _   _  
+|_| |_|  _|  _  _ _ 
+  |   | |_  |_) _\_ 
+            |       
+ ----------------------------------------*/
+@media (min-width: 992px) {
+
+
+
+}
+
+/* -----------------------------------------
+Large devices (large desktops, 1200px and up) 
+   _   _   _    
+|  _| | | | |  _  _ _ 
+| |_  |_| |_| |_) _\_ 
+              |       
+----------------------------------------------*/
+@media (min-width: 1200px) {
+
+
+
+
+
+}

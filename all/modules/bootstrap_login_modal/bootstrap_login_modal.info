@@ -1,0 +1,6 @@
+name = Bootstrap Login Modal
+description = "A Bootstrap login modal for the bootstrap theme"
+package = bootstrap
+core = 7.x
+
+dependencies[] = ctools

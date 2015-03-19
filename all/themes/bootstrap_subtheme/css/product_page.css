@@ -1,0 +1,127 @@
+/* 
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXxxxxXX Product page styling  XXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+*/
+
+.well.product-grid {
+	background-color: #F9FCF7;
+	border-color: #DEEAD7;
+}
+
+.node-product-article .field-name-field-tags {
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+.all-products {
+	background-color: #DEEAD7;
+	
+}
+.all-products:hover {
+	background-color: #CCE4C8;
+}
+.all-products a:hover {
+	color: darkgreen;
+}
+
+.all-products.subhead a {
+	color: #75A66D;
+	display: block;
+	text-decoration: none;
+	margin-left: -10px;
+	padding-left: 10px;
+}
+.all-products-side-menu .media-heading {
+	font-size: 15px;
+	margin-top: 10px;
+}
+
+
+
+
+
+/*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*/
+/**************************************************
+--------------------------------------------------
+media queries 
+
+._ _   _   _| o  _    _.      _  ._ o  _   _
+| | | (/_ (_| | (_|  (_| |_| (/_ |  | (/_ _>
+                       |
+--------------------------------------------------
+Extra small devices (phones, less than 768px) are 
+default for Bootstrap all other device widths use 
+the following media queries
+**************************************************/
+
+
+
+/* -------------------------------------
+Tiny devices (350px and up) 
+_   _   _
+_| |_  | |  _  _ _ 
+_|  _| |_| |_) _\_ 
+           |       
+--------------------------------------*/
+@media (min-width: 355px) {
+
+
+
+}
+
+
+
+/* -------------------------------------
+Small devices (tablets, 768px and up) 
+_       _
+ | |_  |_|  _  _ _ 
+ | |_| |_| |_) _\_ 
+           |       
+--------------------------------------*/
+@media (min-width: 768px) {
+
+
+
+
+}
+
+/* -------------------------------------
+ Medium devices (desktops, 992px and up) 
+ _   _   _  
+|_| |_|  _|  _  _ _ 
+  |   | |_  |_) _\_ 
+            |       
+ ----------------------------------------*/
+@media (min-width: 992px) {
+
+
+
+}
+
+/* -----------------------------------------
+Large devices (large desktops, 1200px and up) 
+   _   _   _    
+|  _| | | | |  _  _ _ 
+| |_  |_| |_| |_) _\_ 
+              |       
+----------------------------------------------*/
+@media (min-width: 1200px) {
+
+
+
+
+
+}

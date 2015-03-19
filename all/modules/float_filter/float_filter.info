@@ -1,0 +1,6 @@
+name = Float Filter
+description = "The Float filter wraps a span or div tag around floated images and tables."
+package = "Input filters"
+dependencies[] = filter
+core = 7.x
+configure = admin/config/content/formats
