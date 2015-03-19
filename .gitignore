@@ -1,4 +1,0 @@
-# Ignore configuration files that may contain sensitive information.
-*/default.settings.php
-*/settings*.php
-*/modules/*/.git
