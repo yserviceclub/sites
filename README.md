@@ -38,10 +38,17 @@ I like [drush](https://github.com/drush-ops/drush) but you don't have to use dru
 ---
 ###### 2. DRUPAL INSTALLATION
 ---
+<<<<<<< HEAD
 2.1 Make a database  
 2.2 Table prefix = 'drup_'  
 2.3 Get the Drupal core  
 2.4 Install Drupal  
+=======
+2.1 Make a database
+2.2 Table prefix = 'drup_'
+2.3 Get the Drupal core
+2.4 Install Drupal
+>>>>>>> 2d7376cb7d88f4dd59d12b4c582ae2f0293eac1e
 
 
 #### 2.1 Make a database
@@ -72,9 +79,15 @@ The database information will be written to the **settings.php** file and must c
 ---
 ###### 3. CLONE THE REPOSITORY
 ---
+<<<<<<< HEAD
 3.1 rename sites folder  
 3.2 clone sites repository  
 3.3 copy settings.php  
+=======
+3.1 rename sites folder
+3.2 clone sites repository
+3.3 copy settings.php
+>>>>>>> 2d7376cb7d88f4dd59d12b4c582ae2f0293eac1e
 
 
 #### 3.1 Rename the **sites** folder
@@ -103,9 +116,15 @@ The **sites-backup** folder won't have any effect on the repository or anything 
 ---
 ###### 4. RESTORE THE DATABASE
 ---
+<<<<<<< HEAD
 4.1 configure file system  
 4.2 enable Backup module  
 4.3 restore database  
+=======
+4.1 configure file system
+4.2 enable Backup module
+4.3 restore database
+>>>>>>> 2d7376cb7d88f4dd59d12b4c582ae2f0293eac1e
 
 #### 4.1 Configure the file system
 You need to set the private files path for the Backup and Migrate module to work.
