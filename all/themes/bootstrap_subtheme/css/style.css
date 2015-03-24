@@ -48,6 +48,10 @@ h1, h2, h3, h4, h5, h6,
 font-family: 'Oswald', sans-serif; /* titles typeface */
 }
 
+a {
+  color: #B64A47;
+}
+
 
 /* ------------------------------ */
 /* label for read more link */
@@ -210,6 +214,7 @@ h2.sidebar-header.event {
 |------------|
 |	images   |
 |------------|
+*/
 
 /* helps to make inserted images responsive */
 img {
@@ -235,6 +240,18 @@ img {
   float: right;
   padding: 4px 0 4px 10px;
 }
+
+/* 
+|------------|
+|	images   |
+|------------|
+*/
+.gallery .row-fluid {
+	margin-bottom: 30px;
+}
+
+
+
 
 /* ----------
 	world spinning
