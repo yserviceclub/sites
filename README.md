@@ -92,9 +92,23 @@ git clone https://github.com/yserviceclub/sites.git
 #### 3.3 Copy the **settings.php** file. 
 You only need to do this once for the initial setup.  
 The git repository will ignore the settings.php file as configured in the .gitignore file.
+You can use a command line to copy the file
 ```
 cp ~/sites-backup/setting.php ~/sites/setting.php
 ```
+You should have something that looks like this
+```
+Localhost/
+└────── Drupal/
+		├─── sites-backup
+		│   	└── default/
+		│   			└── settings.php  --->  copy
+		└─── sites/							    file 
+				└── default/				     to
+						└── settings.php  <---  here
+
+```
+
 The **sites-backup** folder won't have any effect on the repository or anything at all. You can delete it if you want.
 
 
@@ -119,7 +133,7 @@ sites/default/private
 #### 4.2 enable the Backup and Migrate module
 You can find it near the bottom of the list. Don't forget to save.
 ```
-administration » configuration » media » file system
+administration » modules 
 ```
 Or you can use Drush
 ```

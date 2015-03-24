@@ -6,13 +6,25 @@ toolbar adjustment to push the website down
 
 body.toolbar {
 	margin-top: 95px!important;
-	padding-top: 0px!important;
+	padding-top: 0 !important;
 	border-top: 1px dashed gray;
 	box-shadow: 0 -20px 0 20px #474747;
 }
 body.toolbar-drawer {
 	margin-top: 160px!important;
-	padding-top: 0px!important;
+	padding-top: 0!important;
+}
+
+
+html.overlay-open body.toolbar {
+	margin-top: 0 !important;
+	padding-top: 0 !important;
+	border-top: 1px dashed gray;
+	box-shadow: 0 -20px 0 20px #474747;
+}
+html.overlay-open body.toolbar-drawer {
+	margin-top: 0 !important;
+	padding-top: 0 !important;
 }
 
 
