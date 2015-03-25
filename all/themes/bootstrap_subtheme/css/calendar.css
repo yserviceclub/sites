@@ -68,7 +68,10 @@ td.today {
 	display: block;
 }
 
-/* articles below calendar */
+
+/* ------------------------
+ articles below calendar 
+*/
 .view-calendar.second-level-articles {
 	margin-top: 50px;
 }
