@@ -70,11 +70,30 @@ a {
 }
 
 
+.margin-right {
+	margin-right: 10px;
+}
+
 
 /*
 |------------------------------|
-|	thumbnail content views    |
+|	highlighted block section  |
 |------------------------------|
+*/
+
+section > div.highlighted {
+	margin-bottom: 30px;
+}
+
+
+
+
+
+
+/*
+|-------------------------------|
+|	teaser + thumbnail views    |
+|-------------------------------|
 */
 .link_to_content {
 	color: #777777;
@@ -82,6 +101,27 @@ a {
 .link_to_content:hover {
 	text-decoration: none;
 	color: black;
+}
+.link_to_content.Event {
+	color: #D5AC57;
+}
+.link_to_content.Event:hover {
+	text-decoration: none;
+	color: #AC822B;
+}
+.link_to_content.News {
+	color: #9B86AC;
+}
+.link_to_content.News:hover {
+	text-decoration: none;
+	color: #685379;
+}
+.link_to_content.Project {
+	color: #51867F;
+}
+.link_to_content.Project:hover {
+	text-decoration: none;
+	color: #406A65;
 }
 /* body text margins on frontpage for teasers */
 .bodytext-margin {
@@ -94,7 +134,8 @@ a {
   margin-left: 0;
   margin-bottom: 0;
 }
-div.view-frontpage div.thumbnail {
+div.view-frontpage div.thumbnail,
+div.article-teasers ul.media-list > li.media {
 	background-color: transparent;
 	border: none;
 	border-top: 1px solid rgba(214, 211, 206, 1);
@@ -103,6 +144,27 @@ div.view-frontpage div.thumbnail {
 	margin-top: 10px;
 	margin-bottom: 0;
 }
+div.article-teasers ul.media-list > li.media:first-of-type {
+	margin-top: 0;
+	border: none;
+}
+
+div.article-teasers,
+div.country-list {
+	margin-top: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: #FDFAF3;
+	border: 1px solid #EAE1D2;
+}
+div.country-list {
+	margin-top: 0;
+}
+div.country-list .sidebar-header {
+	margin-left: -10px;
+	margin-right: -10px;
+}
+
 div.view-frontpage div.thumbnail h4 {
 	margin-top: 0;
 	margin-bottom: 5px;
@@ -278,10 +340,10 @@ XXXXXXXXXXXXXXXXXXX
 
 
 
-/* 
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-XXXXXXXXXX Our motto side-bsr block  XXXXXXXXXXXXXXXXX
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+/* ----------------------
+
+ Our motto side-bsr block  
+---------------------------
 */
 
 .well.motto {
