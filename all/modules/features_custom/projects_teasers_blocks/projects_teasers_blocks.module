@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Projects teasers blocks feature.
+ */
+
+include_once 'projects_teasers_blocks.features.inc';
