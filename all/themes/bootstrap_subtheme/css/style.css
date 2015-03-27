@@ -80,13 +80,53 @@ a {
 
 /*
 |---------------|
-|	accordian   |
+|	newletter   |
 |---------------|
 */
-
-.accordion-toggle {
+.newsletter-button a .glyphicon {
+	color: rgba(234, 218, 248, 0.5);
+}
+.newsletter-button a .newsletter-btn {
+	font-size: 130%;
+}
+.newsletter-button a {
+	text-align: center;
+	color: #EADAF8;
+	border: solid #bcafc7 1px;
+	font-family: 'Architects Daughter', sans-serif;
+	font-size: 20px;
+	padding: 5px;
 	display: block;
 }
+.newsletter-button a:hover {
+  text-decoration: none;
+  color: #DACBE7;
+} 
+.newsletter-button a:focus {
+  text-decoration: none;
+  color: #ECDBF9;
+}
+.newsletter-button:hover {
+  background: #ac9cba;
+  background-image: -webkit-linear-gradient(top, #ac9cba, #8c769e);
+  background-image: -moz-linear-gradient(top, #ac9cba, #8c769e);
+  background-image: -ms-linear-gradient(top, #ac9cba, #8c769e);
+  background-image: -o-linear-gradient(top, #ac9cba, #8c769e);
+  background-image: linear-gradient(to bottom, #ac9cba, #8c769e);
+}
+.newsletter-button {
+	padding: 0;
+	background: #bda9ce; /* Old browsers */
+	background: -moz-linear-gradient(top,  #bda9ce 0%, #9b86ac 101%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bda9ce), color-stop(101%,#9b86ac)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #bda9ce 0%,#9b86ac 101%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #bda9ce 0%,#9b86ac 101%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #bda9ce 0%,#9b86ac 101%); /* IE10+ */
+	background: linear-gradient(to bottom,  #bda9ce 0%,#9b86ac 101%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bda9ce', endColorstr='#9b86ac',GradientType=0 ); /* IE6-9 */
+
+}
+
 
 
 /*
