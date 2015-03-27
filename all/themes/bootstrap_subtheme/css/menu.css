@@ -27,7 +27,7 @@ header.navbar {
 /* set base typeface for everything in the header navbar */ 
 header#navbar {
 	/*padding: 0;*/
-	margin-top: 10px;
+	margin-top: 20px;
 	background-color: transparent;
 	color: gray;
 	font-family: 'Architects Daughter', sans-serif;

@@ -70,7 +70,14 @@
   margin-bottom: 0;
 }
 
-
+.country-list {
+  font-size: 24px;
+  margin-bottom: 10px;
+  border-top: none;
+  margin-top: 0;
+  padding-top: 0;
+  text-transform: none;
+}
 
 
 
@@ -128,6 +135,10 @@ _       _
 @media (min-width: 768px) {
 
 
+.country-list {
+  font-size: 15px;
+  padding-right: 0;
+}
 
 
 }
@@ -141,6 +152,9 @@ _       _
  ----------------------------------------*/
 @media (min-width: 992px) {
 
+.country-list {
+  font-size: 19px;
+}
 
 
 }
@@ -155,6 +169,10 @@ Large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
 
 
+.country-list {
+  font-size: 22px;
+  padding-right: 10px;
+}
 
 
 
