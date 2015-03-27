@@ -15,6 +15,7 @@
   padding: 10px;
 }
 /* all the headline labels */
+.sidebar-header,
 .sticky-headlines div.row > div.col > div.thumbnail > h6 {
   font-family: "Architects Daughter", sans-serif;
   font-weight: bold;
@@ -28,6 +29,7 @@
 }
 
 /* EVENT - #F6E3BC */
+.sidebar-header.event,
 .sticky-headlines div.row > div.col > div.thumbnail > h6.headline-Event {
   background-color: rgba(246, 227, 188, 1);
   border-color: #F0CF8C;
@@ -35,6 +37,7 @@
 }
 
 /* NEWS - #D2CBD8 */
+.sidebar-header.news,
 .sticky-headlines div.row > div.col > div.thumbnail > h6.headline-News {
   background-color: rgba(210, 203, 216, 1);
   border-color: #BCAFC7;

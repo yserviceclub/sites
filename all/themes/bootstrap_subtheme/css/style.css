@@ -238,7 +238,7 @@ section#block-fb-social-fb-like {
 }
 
 /* sidebar title h2 */
-h2.sidebar-header {
+//.sidebar-header {
 	/*font-family: 'Amatic SC', sans-serif;*/
 	/*font-weight: 700;*/
 	font-family: "Architects Daughter", sans-serif;
@@ -249,23 +249,24 @@ h2.sidebar-header {
 	border-top: 1px solid rgba(172, 170, 168, 1);
 	margin-bottom: 0;
 	margin-top: 0;
+	padding: 2px;
 	padding-left: 10px;
 }
-h2.sidebar-header.news {
+//.sidebar-header.news {
 	background-color: #D2CBD8;
 	color: #9B86AC;
 	border-color: #BCAFC7;
 	border-bottom: 1px solid rgba(214, 211, 206, 1);
 	border-top: 1px solid rgba(172, 170, 168, 1);
 }
-h2.sidebar-header.project {
+//.sidebar-header.project {
 	background-color: #CAE0DD;
 	color: #51867F;
 	border-color: #BBDBD7;
 	border-bottom: 1px solid rgba(214, 211, 206, 1);
 	border-top: 1px solid rgba(172, 170, 168, 1);
 }
-h2.sidebar-header.event {
+//.sidebar-header.event {
 	background-color: #F6E3BC;
 	color: #51867F;
 	border-color: #D5AC57;
