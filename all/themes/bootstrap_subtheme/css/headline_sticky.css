@@ -27,7 +27,14 @@
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
-
+.upcoming .sidebar-header {
+  margin: 0;
+}
+.sidebar-header {
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top: 1px solid;
+}
 /* EVENT - #F6E3BC */
 .sidebar-header.event,
 .sticky-headlines div.row > div.col > div.thumbnail > h6.headline-Event {
