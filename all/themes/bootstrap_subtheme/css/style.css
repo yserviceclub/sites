@@ -77,6 +77,9 @@ a {
 	margin-left: -10px;
 	margin-right: -10px;
 }
+.margin-below {
+	margin-bottom: 20px;
+}
 
 /*
 |---------------------|
@@ -92,7 +95,6 @@ a {
 	font-size: 32px;
 	padding: 0;
 	display: block;
-	/*text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5), 0 1px 0 rgba(255, 255, 255, 0.75);*/
 }
 .donate-button a:hover {
 	text-decoration: none;
@@ -131,55 +133,6 @@ a {
 
 }
 
-
-
-/*
-|---------------------|
-|	newletter button  |
-|---------------------|
-*/
-.newsletter-button a .glyphicon {
-	color: rgba(234, 218, 248, 0.5);
-}
-.newsletter-button a {
-	text-align: center;
-	color: #EADAF8;
-	font-family: 'Architects Daughter', sans-serif;
-	font-size: 24px;
-	padding: 5px;
-	display: block;
-}
-.newsletter-button a:hover {
-	text-decoration: none;
-	color: #DACBE7;
-} 
-.newsletter-button a:focus {
-	text-decoration: none;
-	color: #ECDBF9;
-}
-.newsletter-button:hover {
-	border: solid #9D92A6 1px;
-	border-radius: 3px;
-	background: #ac9cba;
-	background-image: -webkit-linear-gradient(top, #ac9cba, #8c769e);
-	background-image: -moz-linear-gradient(top, #ac9cba, #8c769e);
-	background-image: -ms-linear-gradient(top, #ac9cba, #8c769e);
-	background-image: -o-linear-gradient(top, #ac9cba, #8c769e);
-	background-image: linear-gradient(to bottom, #ac9cba, #8c769e);
-}
-.newsletter-button {
-	border: solid #9D92A6 1px;
-	border-radius: 3px;
-	padding: 0;
-	background: #bda9ce; /* Old browsers */
-	background: -moz-linear-gradient(top,  #bda9ce 0%, #9b86ac 101%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bda9ce), color-stop(101%,#9b86ac)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #bda9ce 0%,#9b86ac 101%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #bda9ce 0%,#9b86ac 101%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #bda9ce 0%,#9b86ac 101%); /* IE10+ */
-	background: linear-gradient(to bottom,  #bda9ce 0%,#9b86ac 101%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bda9ce', endColorstr='#9b86ac',GradientType=0 ); /* IE6-9 */
-}
 
 
 /*
@@ -430,7 +383,7 @@ XXXXXXXXXXXXXXXXXXX
 
 /* ----------------------
 
- Our motto side-bsr block  
+ "Our motto" side-bsr block  
 ---------------------------
 */
 
@@ -439,6 +392,9 @@ XXXXXXXXXXXXXXXXXXX
 	border: 1px solid #EAE1D2;
 }
 
+.well.motto h2 {
+	font-size: 22px;
+}
 
 
 
@@ -487,7 +443,6 @@ _|  _| |_| |_) _\_
 @media (min-width: 355px) {
 
 
-
 }
 
 
@@ -502,6 +457,13 @@ _       _
 @media (min-width: 768px) {
 
 
+.well.motto h2 {
+	font-size: 18px;
+}
+
+.donate-button a {
+	font-size: 26px;
+}
 
 
 }
@@ -514,6 +476,13 @@ _       _
             |       
  ----------------------------------------*/
 @media (min-width: 992px) {
+
+.well.motto h2 {
+	font-size: 22px;
+}
+.donate-button a {
+	font-size: 29px;
+}
 
 
 
@@ -529,7 +498,9 @@ Large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
 
 
-
+.donate-button a {
+	font-size: 32px;
+}
 
 
 }

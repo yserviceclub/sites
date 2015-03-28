@@ -34,6 +34,7 @@ stylesheets[all][] = css/menu.css
 stylesheets[all][] = css/main_menu_colors.css
 stylesheets[all][] = css/login_modal.css
 stylesheets[all][] = css/headline_sticky.css
+stylesheets[all][] = css/newsletter.css
 
 
 ;;;;;;;;;;;;;;;;;;;;;

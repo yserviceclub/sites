@@ -1,0 +1,203 @@
+
+
+/*
+|---------------------|
+|	newletter button  |
+|---------------------|
+*/
+.newsletter-button a .glyphicon {
+	color: rgba(234, 218, 248, 0.5);
+}
+.newsletter-button a {
+	text-align: center;
+	color: #EADAF8;
+	font-family: 'Architects Daughter', sans-serif;
+	font-size: 24px;
+	padding: 5px;
+	display: block;
+}
+.newsletter-button a:hover {
+	text-decoration: none;
+	color: #DACBE7;
+} 
+.newsletter-button a:focus {
+	text-decoration: none;
+	color: #ECDBF9;
+}
+.newsletter-button:hover {
+	border: solid #9D92A6 1px;
+	border-radius: 3px;
+	background: #ac9cba;
+	background-image: -webkit-linear-gradient(top, #ac9cba, #8c769e);
+	background-image: -moz-linear-gradient(top, #ac9cba, #8c769e);
+	background-image: -ms-linear-gradient(top, #ac9cba, #8c769e);
+	background-image: -o-linear-gradient(top, #ac9cba, #8c769e);
+	background-image: linear-gradient(to bottom, #ac9cba, #8c769e);
+}
+.newsletter-button {
+	border: solid #9D92A6 1px;
+	border-radius: 3px;
+	padding: 0;
+	background: #bda9ce; /* Old browsers */
+	background: -moz-linear-gradient(top,  #bda9ce 0%, #9b86ac 101%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bda9ce), color-stop(101%,#9b86ac)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #bda9ce 0%,#9b86ac 101%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #bda9ce 0%,#9b86ac 101%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #bda9ce 0%,#9b86ac 101%); /* IE10+ */
+	background: linear-gradient(to bottom,  #bda9ce 0%,#9b86ac 101%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bda9ce', endColorstr='#9b86ac',GradientType=0 ); /* IE6-9 */
+}
+
+
+/*
+|------------------------------|
+|		newsletter banner	   |
+|------------------------------|
+*/
+
+.newsletter-banner {
+	background-image: url('../logos/Newsletter-banner-color.png');
+	background-size: 100% 100%;
+	padding: 5px;
+	text-align: center;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+.newsletter-banner > h4 {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.newsletter-banner > h1 {
+	color: #8c769e;
+	font-size: 30px;
+	letter-spacing: .17em;
+	text-indent: 0.17em;
+	text-transform: uppercase;
+	margin-top: 0px;
+ }
+
+
+/*
+|------------------------------|
+|		newsletter teasers	   |
+|------------------------------|
+*/
+
+.newsletters {
+	margin-bottom: 20px;
+}
+
+
+.newsletters .thumbnail {
+	background-color: transparent;
+	border: none;
+}
+
+
+
+
+/*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*/
+/**************************************************
+--------------------------------------------------
+media queries 
+
+._ _   _   _| o  _    _.      _  ._ o  _   _
+| | | (/_ (_| | (_|  (_| |_| (/_ |  | (/_ _>
+                       |
+--------------------------------------------------
+Extra small devices (phones, less than 768px) are 
+default for Bootstrap all other device widths use 
+the following media queries
+**************************************************/
+
+
+
+/* -------------------------------------
+Tiny devices (350px and up) 
+_   _   _
+_| |_  | |  _  _ _ 
+_|  _| |_| |_) _\_ 
+           |       
+--------------------------------------*/
+@media (min-width: 355px) {
+
+
+}
+
+
+
+/* -------------------------------------
+Small devices (tablets, 768px and up) 
+_       _
+ | |_  |_|  _  _ _ 
+ | |_| |_| |_) _\_ 
+           |       
+--------------------------------------*/
+@media (min-width: 768px) {
+
+
+.newsletter-banner > h4 {
+	font-size: 16px;
+}
+
+
+}
+
+/* -------------------------------------
+ Medium devices (desktops, 992px and up) 
+ _   _   _  
+|_| |_|  _|  _  _ _ 
+  |   | |_  |_) _\_ 
+            |       
+ ----------------------------------------*/
+@media (min-width: 992px) {
+
+.newsletter-banner > h4 {
+	font-size: 16px;
+}
+.newsletter-banner > h1 {
+	font-size: 40px;
+	letter-spacing: .255em;
+	text-indent: 0.255em;
+}
+
+
+}
+
+/* -----------------------------------------
+Large devices (large desktops, 1200px and up) 
+   _   _   _    
+|  _| | | | |  _  _ _ 
+| |_  |_| |_| |_) _\_ 
+              |       
+----------------------------------------------*/
+@media (min-width: 1200px) {
+
+
+.newsletter-banner > h4 {
+	font-size: 18px;
+}
+.newsletter-banner > h1 {
+	color: #8c769e;
+	font-size: 50px;
+	letter-spacing: .17em;
+	text-indent: 0.17em;
+	text-transform: uppercase;
+	margin-top: 0px;
+ }
+
+
+
+}
