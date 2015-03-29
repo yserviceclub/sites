@@ -49,7 +49,7 @@ font-family: 'Oswald', sans-serif; /* titles typeface */
 }
 
 a {
-  color: #B64A47;
+  color: #AC514E;
 }
 
 
@@ -465,6 +465,10 @@ _       _
 	font-size: 26px;
 }
 
+.article-teasers .media-list .media-body {
+	padding-top: 10px;
+	clear: both; 	
+}
 
 }
 
@@ -482,6 +486,10 @@ _       _
 }
 .donate-button a {
 	font-size: 29px;
+}
+.article-teasers .media-list .media-body {
+	padding-top: 0;
+	clear: none; 	
 }
 
 

@@ -6,7 +6,8 @@
 |---------------------|
 */
 .newsletter-button a .glyphicon {
-	color: rgba(234, 218, 248, 0.5);
+	opacity: .5;
+
 }
 .newsletter-button a {
 	text-align: center;
@@ -46,6 +47,12 @@
 	background: -ms-linear-gradient(top,  #bda9ce 0%,#9b86ac 101%); /* IE10+ */
 	background: linear-gradient(to bottom,  #bda9ce 0%,#9b86ac 101%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bda9ce', endColorstr='#9b86ac',GradientType=0 ); /* IE6-9 */
+}
+//.newsletter-btn-bg {
+	background-image: url(../logos/Newsletter-btn-left.png), url(../logos/Newsletter-btn-right.png);
+	background-size: 50% 100%, 50% 100%;
+	background-repeat: no-repeat, no-repeat;
+	background-position: left, right;
 }
 
 
@@ -87,13 +94,64 @@
 	margin-bottom: 20px;
 }
 
-
 .newsletters .thumbnail {
 	background-color: transparent;
 	border: none;
 }
 
+.newsletters .newsletter-title {
+	margin-top: 0;
+}
 
+
+/*
+|------------------------------|
+|		newsletter Archives	   |
+|------------------------------|
+*/
+
+.newsletter-archives .media-list {
+	margin-bottom: 5px;
+}
+.newsletter-archives .media {
+	margin: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #EAE1D2;
+}
+.newsletter-archives .media:hover {
+	background-color: #FDFAF3;
+}
+
+.newsletter-archives .media-heading {
+	font-size: 15px;
+}
+
+
+
+
+
+
+
+.newsletter-archives .table-hover>tbody>tr:hover>td {
+	background-color: #FDFAF3;
+}
+
+.newsletter-archives .sidebar-header.news {
+	margin-bottom: 0;
+}
+.newsletter-archives .table {
+	margin-bottom: 5px;
+}
+
+.newsletter-archives .glyphicon {
+	font-size: 20px;
+	opacity: 0.5;
+}
+
+.newsletter-archives .pdf-title {
+	margin-left: 5px;
+}
 
 
 /*
@@ -147,11 +205,17 @@ _       _
 --------------------------------------*/
 @media (min-width: 768px) {
 
+.newsletter-button a {
+	font-size: 18px;
+}
 
 .newsletter-banner > h4 {
 	font-size: 16px;
 }
-
+.newsletters .newsletter-title {
+	clear: both;
+	padding-top: 10px;
+}
 
 }
 
@@ -164,6 +228,10 @@ _       _
  ----------------------------------------*/
 @media (min-width: 992px) {
 
+.newsletter-button a {
+	font-size: 22px;
+}
+
 .newsletter-banner > h4 {
 	font-size: 16px;
 }
@@ -172,6 +240,11 @@ _       _
 	letter-spacing: .255em;
 	text-indent: 0.255em;
 }
+.newsletters .newsletter-title {
+	clear: none;
+	padding-top: 0;
+}
+
 
 
 }
@@ -185,6 +258,9 @@ Large devices (large desktops, 1200px and up)
 ----------------------------------------------*/
 @media (min-width: 1200px) {
 
+.newsletter-button a {
+	font-size: 24px;
+}
 
 .newsletter-banner > h4 {
 	font-size: 18px;
