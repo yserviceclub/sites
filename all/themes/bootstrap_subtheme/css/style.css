@@ -48,10 +48,62 @@ h1, h2, h3, h4, h5, h6,
 font-family: 'Oswald', sans-serif; /* titles typeface */
 }
 
+/* -------------
+	LINKS 
+	------------ */
 a {
-  color: #AC514E;
+  color: #924542;
 }
-
+/* PROJECT */
+.sticky-title.Project a, 
+.country-list .media-heading a,
+.view-projects-teasers .pagination a,
+.view-projects-teasers .media-heading a {
+  color: #63847F;
+}
+.sticky-title.Project a:hover, 
+.country-list .media-heading a:hover,
+.view-projects-teasers .pagination a:hover,
+.view-projects-teasers .media-heading a:hover {
+  color: #7BA49E;
+}
+/* EVENT */
+.sticky-title.Event a, 
+.upcoming .views-field-title a,
+.view-events-teasers .media-heading a,
+.view-events-teasers .pagination a {
+  color: #977A3E;
+}
+.sticky-title.Event a:hover, 
+.upcoming .views-field-title a:hover,
+.view-events-teasers .media-heading a:hover,
+.view-events-teasers .pagination a:hover {
+  color: #D5AC57;
+}
+/* NEWS */
+.view-frontpage a,
+.view-frontpage .pagination a,
+.sticky-title.News a {
+	color: #70617D;
+}
+.view-frontpage a:hover,
+.view-frontpage .pagination a:hover,
+.sticky-title.News a:hover {
+	color: #9B86AC;
+}
+/* NEWSLETTER */
+.newsletter-title a,
+.newsletter-archives a,
+.newsletters .pagination a,
+.newsletter-archives .pagination a {
+	color: #47527F;
+}
+.newsletter-title a:hover,
+.newsletter-archives a:hover,
+.newsletters .pagination a:hover,
+.newsletter-archives .pagination a:hover {
+	color: #1D37A2;
+}
 
 /* ------------------------------ */
 /* label for read more link */
@@ -80,6 +132,19 @@ a {
 .margin-below {
 	margin-bottom: 20px;
 }
+
+
+/* ----------------
+	form pop-up menu
+	--------------- */
+
+.form-control {
+	height: 25px;
+	font-size: 12px;
+	padding: 0 12px;
+}
+
+
 
 /*
 |---------------------|
@@ -306,6 +371,9 @@ section#block-fb-social-fb-like {
 .pagination li a {
 	padding-top: 2px;
 	padding-bottom: 2px;
+}
+.view-frontpage .pagination {
+	margin-top: 15px;
 }
 
 

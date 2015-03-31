@@ -14,16 +14,17 @@
 .sticky-headlines div.row > div.col > div.thumbnail {
   padding: 10px;
 }
-.sticky-headlines div.row > div.col > div.thumbnail > h6 {
+.sticky-headlines div.row > div.col > div.thumbnail > .header-label-title {
   margin: -10px;
 }
 /* all the headline labels */
 .sidebar-header,
-.sticky-headlines div.row > div.col > div.thumbnail > h6 {
+.sticky-headlines div.row > div.col > div.thumbnail > .header-label-title {
   font-family: "Architects Daughter", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   padding: 2px;
+  padding-top: 4px;
   padding-left: 10px;
   margin-bottom: 10px;
   border-radius: 0;
@@ -39,7 +40,7 @@
 
 /* EVENT - #F6E3BC */
 .sidebar-header.event,
-.sticky-headlines div.row > div.col > div.thumbnail > h6.headline-Event {
+.sticky-headlines div.row > div.col > div.thumbnail > .header-label-title.headline-Event {
   background-color: rgba(246, 227, 188, 1);
   border-color: #F0CF8C;
   color: #D5AC57;
@@ -47,7 +48,7 @@
 
 /* NEWS - #D2CBD8 */
 .sidebar-header.news,
-.sticky-headlines div.row > div.col > div.thumbnail > h6.headline-News {
+.sticky-headlines div.row > div.col > div.thumbnail > .header-label-title.headline-News {
   background-color: rgba(210, 203, 216, 1);
   border-color: #BCAFC7;
   color: #9B86AC;
@@ -55,10 +56,23 @@
 
 /* PROJECT - #CAE0DD */
 .sidebar-header.project,
-.sticky-headlines div.row > div.col > div.thumbnail > h6.headline-Project {
+.sticky-headlines div.row > div.col > div.thumbnail > .header-label-title.headline-Project {
   background-color: rgba(202, 224, 221, 1);
   border-color: #9CC5BF;
   color: #7BA49E;
+}
+.sidebar-header.news,
+.sidebar-header.project,
+.sidebar-header.newsletter {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* NEWSLETTER - #5263A6 */
+.sidebar-header.newsletter {
+  background-color: #B4BFEB;
+  border-color: #414F84;
+  color: #7985B8;
 }
 
 /* margin LEFT + RIGHT for small-teaser news images */
@@ -71,6 +85,15 @@
 .sticky-headlines div.row > div.col > div.thumbnail > div > .sticky-title {
   margin-bottom: 0;
 }
+
+/* --------------------
+sticky articles
+------------------------ */
+.sticky-title {
+  margin-left: 80px;
+}
+
+
 
 
 /* --------------------
