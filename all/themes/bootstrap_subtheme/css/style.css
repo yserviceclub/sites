@@ -55,12 +55,14 @@ a {
   color: #924542;
 }
 /* PROJECT */
+a .Project-title,
 .sticky-title.Project a, 
 .country-list .media-heading a,
 .view-projects-teasers .pagination a,
 .view-projects-teasers .media-heading a {
   color: #63847F;
 }
+a .Project-title:hover,
 .sticky-title.Project a:hover, 
 .country-list .media-heading a:hover,
 .view-projects-teasers .pagination a:hover,
@@ -68,12 +70,14 @@ a {
   color: #7BA49E;
 }
 /* EVENT */
+a .Event-title,
 .sticky-title.Event a, 
 .upcoming .views-field-title a,
 .view-events-teasers .media-heading a,
 .view-events-teasers .pagination a {
   color: #977A3E;
 }
+a .Event-title:hover,
 .sticky-title.Event a:hover, 
 .upcoming .views-field-title a:hover,
 .view-events-teasers .media-heading a:hover,
@@ -81,11 +85,13 @@ a {
   color: #D5AC57;
 }
 /* NEWS */
+a .News-title,
 .view-frontpage a,
 .view-frontpage .pagination a,
 .sticky-title.News a {
 	color: #70617D;
 }
+a .News-title:hover,
 .view-frontpage a:hover,
 .view-frontpage .pagination a:hover,
 .sticky-title.News a:hover {
@@ -128,6 +134,9 @@ a {
 .neg-margin {
 	margin-left: -10px;
 	margin-right: -10px;
+}
+.margin-above {
+	padding-top: 20px;
 }
 .margin-below {
 	margin-bottom: 20px;

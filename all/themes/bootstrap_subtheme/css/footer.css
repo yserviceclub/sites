@@ -20,7 +20,7 @@ html {
 body {
   min-height: 100%;
   /* Margin bottom by footer height */
-  padding-bottom: 163px;
+  padding-bottom: 183px;
 }
 .footer {
 	border: none;
@@ -32,13 +32,49 @@ body {
   /*width: 1746px;*/
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 163px;
+  height: 183px;
   margin-top: 0;
   padding-top: 0;
   padding-bottom: 0;
 }
 
 
+.footer-donate {
+  background: transparent;
+  border: none;
+}
+.footer-donate:hover {
+  background: transparent;
+  border: none;
+
+}
+
+.footer-donate.donate-button {
+  text-align: center;
+  color: #cc0000;
+  font-family: 'Architects Daughter', sans-serif;
+  font-weight: bolder;
+  letter-spacing: 0.1625em;
+  text-transform: uppercase;
+  font-size: 32px;
+  padding: 0;
+}
+
+.soccer-ball {
+  margin-left: auto;
+  margin-right: auto;
+  width: 46px;
+  height: 45px;
+  background-image: url(../logos/soccer-ball.png);
+}
+
+.books {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  height: 73px;
+  background-image: url(../logos/books.png);
+}
 
 
 
