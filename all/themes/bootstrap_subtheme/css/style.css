@@ -268,9 +268,12 @@ section > div.highlighted {
   margin-left: 0;
   margin-bottom: 0;
 }
-
+.upcoming-title,
 div.article-teasers ul.media-list > li.media .media-heading {
-	font-size: 15px;
+	font-family: 'Droid Sans', arial, sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	//letter-spacing: 0;
 }
 div.view-frontpage div.thumbnail,
 div.article-teasers ul.media-list > li.media {
