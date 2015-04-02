@@ -7,11 +7,11 @@ header.navbar {
 	div.navbar-header {a.logo}
 	div.container {
 		nav "role=navigation" {
-			ul.navbar-nav {"main menu"} 
 			div.region-navigation {
 				section.block-system {"navigation menu"} 
 				section.block-search {"search form"} 
 				secion.block-bootstrap-login-modal {"bootstrap login pop-up"}
+			ul.navbar-nav {"main menu"} 
 			}
 		}
 	}
@@ -182,6 +182,15 @@ div.region-navigation>section.block ul li a {
 }
 
 /* --- navigation menu dropdown ---- */
+
+/* parent menu item */
+div.region-navigation>section.block ul li.first.expanded.dropdown>a {
+    background-color: #EEB9B0;
+    color: white;
+}
+div.region-navigation>section.block ul li.first.expanded.dropdown>a:hover {
+    background-color: #E29390;
+}
 
 /* background of the button when selecting dropdown menu */
 div.region-navigation>section.block ul li a:hover,
