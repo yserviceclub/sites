@@ -58,15 +58,13 @@ a {
 a .Project-title,
 .sticky-title.Project a, 
 .country-list .media-heading a,
-.view-projects-teasers .pagination a,
-.view-projects-teasers .media-heading a {
+.article-teasers.projects a {
   color: #63847F;
 }
 a .Project-title:hover,
 .sticky-title.Project a:hover, 
 .country-list .media-heading a:hover,
-.view-projects-teasers .pagination a:hover,
-.view-projects-teasers .media-heading a:hover {
+.article-teasers.projects a:hover {
   color: #7BA49E;
 }
 /* EVENT */
