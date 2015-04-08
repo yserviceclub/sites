@@ -4,6 +4,11 @@ carousel
 ----------------- 
 **********************/
 
+/* set margin below carousel block */
+.carousel-header {
+	margin-bottom: 35px;
+}
+
 .carousel-control { 
 	z-index: 100;
 	font-size: 20px;
@@ -25,9 +30,6 @@ carousel
 	color: #FDFAF3;
 	font-size: 16px;
 }
-
-
-
 
 /* carousel indicators */
 .carousel-indicators {

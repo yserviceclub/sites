@@ -55,28 +55,43 @@ a {
   color: #924542;
 }
 /* PROJECT */
+.Page-title a,
+a .Page-title,
+.Page-body a,
 a .Project-title,
-.sticky-title.Project a, 
+.sticky-title.project a, 
+.project-program-list .media-heading a,
 .country-list .media-heading a,
+.project-page-teasers a,
 .article-teasers.projects a {
   color: #63847F;
 }
+.Page-title:hover a,
+a .Page-title:hover,
+.Page-body a:hover,
 a .Project-title:hover,
-.sticky-title.Project a:hover, 
-.country-list .media-heading a:hover,
+.sticky-title.project a:hover, 
+.project-program-list .media-heading a:hover,
+.project-page-teasers a:hover,
 .article-teasers.projects a:hover {
   color: #7BA49E;
 }
 /* EVENT */
+.Event-title a,
+.post-date__Event a,
+.Event-body a,
 a .Event-title,
-.sticky-title.Event a, 
+.sticky-title.event a, 
 .upcoming .views-field-title a,
 .view-events-teasers .media-heading a,
 .view-events-teasers .pagination a {
   color: #977A3E;
 }
+.Event-title a:hover,
+.post-date__Event a:hover,
+.Event-body a:hover,
 a .Event-title:hover,
-.sticky-title.Event a:hover, 
+.sticky-title.event a:hover, 
 .upcoming .views-field-title a:hover,
 .view-events-teasers .media-heading a:hover,
 .view-events-teasers .pagination a:hover {
@@ -84,15 +99,19 @@ a .Event-title:hover,
 }
 /* NEWS */
 a .News-title,
+.News-title a,
+.News-body a,
 .view-frontpage a,
 .view-frontpage .pagination a,
-.sticky-title.News a {
+.sticky-title.news a {
 	color: #70617D;
 }
 a .News-title:hover,
+.News-title a:hover,
+.News-body a:hover,
 .view-frontpage a:hover,
 .view-frontpage .pagination a:hover,
-.sticky-title.News a:hover {
+.sticky-title.news a:hover {
 	color: #9B86AC;
 }
 /* NEWSLETTER */
@@ -194,6 +213,7 @@ a .News-title:hover,
 	border: solid #9D92A6 1px;
 	border-radius: 3px;
 	padding: 0;
+	margin-bottom: 15px;
 	background: #ff3019; /* Old browsers */
 	background: -moz-linear-gradient(top,  #ff3019 0%, #cf0404 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff3019), color-stop(100%,#cf0404)); /* Chrome,Safari4+ */
@@ -272,6 +292,9 @@ div.article-teasers ul.media-list > li.media .media-heading {
 	font-weight: bold;
 	font-size: 14px;
 }
+
+div.about-us-page div.thumbnail,
+div.project-page-teasers div.thumbnail,
 div.view-frontpage div.thumbnail,
 div.article-teasers ul.media-list > li.media {
 	background-color: transparent;
@@ -292,8 +315,37 @@ div.article-teasers {
 	padding-right: 10px;
 	background-color: #FDFAF3;
 	border: 1px solid #EAE1D2;
+	margin-bottom: 15px;
+}
+/* -----------------
+	display above teaser list 
+	--------------- */
+
+.display-teaser .thumbnail {
+	padding: 0;
+	padding-bottom: 10px;
+	margin-bottom: 0;
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid rgba(214, 211, 206, 1);
+}
+.display-teaser .thumbnail > a > img {
+	margin: 0;
+	width: 100%;
+	margin-top: 10px;
+}
+.display-teaser .thumbnail > .caption {
+	padding: 0;
+}
+.display-teaser-image {
+	width: 100%;
+	margin-bottom: 10px;
+}
+.display-teaser-image img{
+	width: 100%;
 }
 
+div.project-program-list .sidebar-header,
 div.country-list .sidebar-header {
 	margin-left: -10px;
 	margin-right: -10px;
@@ -321,6 +373,29 @@ body.maintenance-page  .second-paragraph {
 }
 
 
+
+
+/*
+|--------------------------|
+|	project program list   |
+|--------------------------|
+*/
+.project-program-list h3{
+  font-size: 14px;
+  margin-top: 0;
+}
+.project-program-list .media {
+  margin-top: 0;
+}
+.project-program-list .media-list {
+  /*margin-bottom: 0;*/
+}
+.project-program-list h4{
+	font-family: 'Droid Sans', arial, sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	margin-left: 10px;
+}
 
 
 /*
@@ -363,7 +438,7 @@ section#block-fb-social-fb-like {
 	margin-top: 0px;
 }
 .region > section {
-	margin-top: 20px;
+	/*margin-top: 20px;*/
 }
 
 .media-list > .media img {

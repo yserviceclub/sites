@@ -40,7 +40,7 @@
 
 /* EVENT - #F6E3BC */
 .sidebar-header.event,
-.sticky-headlines div.row > div.col > div.thumbnail > .header-label-title.headline-Event {
+.sticky-headlines div.row > div.col > div.thumbnail > .header-label-title.headline-event {
   background-color: rgba(246, 227, 188, 1);
   border-color: #F0CF8C;
   color: #D5AC57;
@@ -48,7 +48,7 @@
 
 /* NEWS - #D2CBD8 */
 .sidebar-header.news,
-.sticky-headlines div.row > div.col > div.thumbnail > .header-label-title.headline-News {
+.sticky-headlines div.row > div.col > div.thumbnail > .header-label-title.headline-news {
   background-color: rgba(210, 203, 216, 1);
   border-color: #BCAFC7;
   color: #9B86AC;
@@ -56,7 +56,7 @@
 
 /* PROJECT - #CAE0DD */
 .sidebar-header.project,
-.sticky-headlines div.row > div.col > div.thumbnail > .header-label-title.headline-Project {
+.sticky-headlines div.row > div.col > div.thumbnail > .header-label-title.headline-project {
   background-color: rgba(202, 224, 221, 1);
   border-color: #9CC5BF;
   color: #7BA49E;
