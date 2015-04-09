@@ -1,0 +1,11 @@
+name = Disable Taxonomy Description
+description = Add ability to disable the taxonomy description field of a specific vocabulary.
+core = 7.x
+dependencies[] = taxonomy
+
+; Information added by Drupal.org packaging script on 2014-10-20
+version = "7.x-1.0"
+core = "7.x"
+project = "disable_taxonomy_description"
+datestamp = "1413836338"
+

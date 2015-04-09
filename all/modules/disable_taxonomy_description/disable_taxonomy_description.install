@@ -1,0 +1,15 @@
+<?php
+/**
+ * @file
+ * Contains install and uninstall functions.
+ */
+
+/**
+ * Implements hook_uninstall().
+ */
+function disable_taxonomy_description_uninstall() {
+  // Delete all variables created by this module.
+  db_delete('variable')
+    ->condition('name', 'disable_taxonomy_description%', 'LIKE')
+    ->execute();
+}

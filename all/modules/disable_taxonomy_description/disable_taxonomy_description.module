@@ -1,0 +1,101 @@
+<?php
+/**
+ * @file
+ * Add ability to disable the taxonomy description field.
+ */
+
+/**
+ * Implements hook_help().
+ */
+function disable_taxonomy_description_help($path, $arg) {
+  switch ($path) {
+    case 'admin/help#disable_taxonomy_description':
+      $output = '<p>' . t('This is a simple module that add ability to disable the taxonomy description field of a specific vocabulary.') . '</p>';
+      $output .= '<p>' . t('To use this feature, simply edit the vocabulary you want then check the option "Disable taxonomy description field of this vocabulary". So when you add a new taxonomy term, the Description field will no longer be available.') . '</p>';
+      return $output;
+  }
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function disable_taxonomy_description_form_alter(&$form, &$form_state, $form_id) {
+  // Taxonomy term form.
+  if ($form_id == 'taxonomy_form_term') {
+    // Load the status of a specific vocabulary.
+    $disable_taxonomy_description_status = _disable_taxonomy_description_get_variable($form['#vocabulary']);
+
+    if ($disable_taxonomy_description_status) {
+      $form['description']['#access'] = FALSE;
+    }
+  }
+
+  // Taxonomy vocabulary form.
+  if ($form_id == 'taxonomy_form_vocabulary' && !isset($form_state['confirm_delete'])) {
+    // Load the status of a specific vocabulary.
+    $disable_taxonomy_description_status = _disable_taxonomy_description_get_variable($form['#vocabulary']);
+
+    // Define the default value based on the status variable loaded before.
+    $default_value = isset($disable_taxonomy_description_status) ? $disable_taxonomy_description_status : FALSE;
+
+    // Status toggle switch.
+    $form['disable_taxonomy_description'] = array(
+      '#type' => 'checkbox',
+      '#weight' => 10,
+      '#title' => t('Disable taxonomy description field of this vocabulary'),
+      '#description' => t('If checked, the description field will be removed from the taxonomy term form.'),
+      '#default_value' => $default_value,
+    );
+
+    // Custom submit handler to save the status of Description field.
+    $form['#submit'][] = '_disable_taxonomy_description_submit';
+  }
+}
+
+/**
+ * Custom submit handler to save the status of description field.
+ */
+function _disable_taxonomy_description_submit($form, &$form_state) {
+  // Machine name is not available when we are deleting a term
+  // so don't try to save the variable.
+  if (isset($form_state['values']['machine_name'])) {
+    $vocab_machine_name = $form_state['values']['machine_name'];
+
+    // Store the status of this vocabulary based on user input.
+    $disable_status = $form_state['values']['disable_taxonomy_description'];
+    variable_set('disable_taxonomy_description_' . $vocab_machine_name, $disable_status);
+  }
+}
+
+/**
+ * Implements hook_taxonomy_vocabulary_delete().
+ */
+function disable_taxonomy_description_taxonomy_vocabulary_delete($vocabulary) {
+  // If the vocabulary gets deleted, clean up our variable as well.
+  variable_del('disable_taxonomy_description_' . $vocabulary->machine_name);
+}
+
+/**
+ * Implements hook_taxonomy_vocabulary_update().
+ */
+function disable_taxonomy_description_taxonomy_vocabulary_update($vocabulary) {
+  // If the vocabulary machine name changed
+  // delete the variable associated with the old name.
+  if ($vocabulary->old_machine_name != $vocabulary->machine_name) {
+    variable_del('disable_taxonomy_description_' . $vocabulary->old_machine_name);
+  }
+}
+
+/**
+ * Return variable from a specific vocabulary.
+ *
+ * @param object $vocabulary
+ *   The object from get the variable.
+ */
+function _disable_taxonomy_description_get_variable($vocabulary) {
+  // Get variable from vocabulary name.
+  $vocab_machine_name = $vocabulary->machine_name;
+  $variable = variable_get('disable_taxonomy_description_' . $vocab_machine_name, FALSE);
+
+  return $variable;
+}
