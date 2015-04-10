@@ -42,7 +42,7 @@
 .navbar nav>.menu>.active:nth-child(2)>a,
 .navbar nav>.menu>.active:nth-child(2)>a,
 .navbar nav>.menu>.active-trail:nth-child(2)>a {
-    background-color: rgb(202, 224, 221);
+    background-color: rgb(185, 212, 209);
 }
 
 /* dropdown background */
@@ -261,7 +261,7 @@ _       _
     .navbar nav>.menu>.active:nth-child(2)>a,
     .navbar nav>.menu>.active:nth-child(2)>a,
     .navbar nav>.menu>.active-trail:nth-child(2)>a {
-        background-color: rgb(202, 224, 221);
+        background-color: rgb(185, 212, 209);
     }
 
     /* dropdown background */

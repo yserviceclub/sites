@@ -23,6 +23,15 @@ header.navbar {
 
 
 
+/* hover submenu */
+
+ul.nav li.dropdown:hover ul.dropdown-menu {
+  display: block;
+}
+ul.nav li.dropdown ul.dropdown-menu {
+  margin-top: 0;
+}
+
 
 /* set base typeface for everything in the header navbar */ 
 header#navbar {
@@ -53,7 +62,7 @@ header#navbar nav>.menu>li>a {
 }
 
 /* reset contextual menu if needed */
-header#navbar div.contextual-links-wrapper ul.contextual-links li a {
+//header#navbar div.contextual-links-wrapper ul.contextual-links li a {
 	font-family: 'Droid Sans', arial, sans-serif;
 	font-size: 13.5px;
 	font-weight: normal;

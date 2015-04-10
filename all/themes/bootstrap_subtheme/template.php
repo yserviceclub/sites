@@ -115,3 +115,5 @@ function bootstrap_subtheme_bootstrap_login_modal_output($vars) {
   'inline');
   return $links . $login_modal;
 }
+
+
