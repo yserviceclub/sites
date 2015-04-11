@@ -10,7 +10,7 @@
 
 
 /* --------------------------
-|	calendar header fix 	|
+|	  calendar header fix   	|
 ----------------------------*/
 
 // this function is customized to shorten the date format that appears in the calendar header

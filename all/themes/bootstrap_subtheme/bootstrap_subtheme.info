@@ -35,6 +35,8 @@ stylesheets[all][] = css/main_menu_colors.css
 stylesheets[all][] = css/login_modal.css
 stylesheets[all][] = css/header-titles.css
 stylesheets[all][] = css/newsletter.css
+; stylesheets[all][] = addons/smartmenus-0.9.7/css/sm-core-css.css
+stylesheets[all][] = addons/bootstrap/jquery.smartmenus.bootstrap.css
 
 
 ;;;;;;;;;;;;;;;;;;;;;
@@ -42,7 +44,9 @@ stylesheets[all][] = css/newsletter.css
 ;;;;;;;;;;;;;;;;;;;;;
  
 ; scripts[] = 'js/login_modal.js'
-
+scripts[] = 'js/jquery.smartmenus.js'
+scripts[] = 'js/bootstrap-dropdown-multilevel.js'
+scripts[] = 'addons/bootstrap/jquery.smartmenus.bootstrap.js'
 
 
 

@@ -17,24 +17,23 @@ function bootstrap_subtheme_menu_link(array $variables) {
     if (($element['#original_link']['menu_name'] == 'management') && (module_exists('navbar'))) {
       $sub_menu = drupal_render($element['#below']);
     }
-    elseif ((!empty($element['#original_link']['depth'])) && ($element['#original_link']['depth'] == 1)) {
+    // change depth to display n>2 levels of submenu (default is ==1 only shows 1 level "parent>child" submenu)
+    elseif ((!empty($element['#original_link']['depth'])) && ($element['#original_link']['depth'] >= 1)) {
       // Add our own wrapper.
       unset($element['#below']['#theme_wrappers']);
       $sub_menu = '<ul class="dropdown-menu">' . drupal_render($element['#below']) . '</ul>';
       // Generate as standard dropdown.
-      $element['#title'] .= ' <span class="caret"></span>';
+      // $element['#title'] .= ' <span class="caret"></span>';
       $element['#attributes']['class'][] = 'dropdown';
       $element['#localized_options']['html'] = TRUE;
 
       // Set dropdown trigger element to # to prevent inadvertant page loading
       // when a submenu link is clicked.
-      /*
-      * $element['#localized_options']['attributes']['data-target'] = '#';
-      */
+      $element['#localized_options']['attributes']['data-target'] = '#';
       $element['#localized_options']['attributes']['class'][] = 'dropdown-toggle';
-      /*
-      * $element['#localized_options']['attributes']['data-toggle'] = 'dropdown';
-      */
+      // comment element bellow if you want your parent menu links to be "clickable"
+      // $element['#localized_options']['attributes']['data-toggle'] = 'dropdown';
+      
     }
   }
   // On primary navigation menu, class 'active' is not set on active menu item.
