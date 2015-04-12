@@ -14,9 +14,12 @@
 	$(function() {
 
 		// init all menus
-		$('ul.navbar-nav').each(function() {
+		$('ul.menu.nav').each(function() {
 				var $this = $(this);
 				$this.addClass('sm').smartmenus({
+				// $this.smartmenus({
+
+						subMenusMaxWidth: '',
 
 						// these are some good default options that should work for all
 						// you can, of course, tweak these as you like
