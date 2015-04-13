@@ -55,9 +55,9 @@ a {
   color: #924542;
 }
 /* PROJECT */
-.Page-title a,
-a .Page-title,
-.Page-body a,
+.Article-title a,
+a .Article-title,
+.Article-body a,
 a .Project-title,
 .sticky-title.project a, 
 .project-program-list .media-heading a,
@@ -66,9 +66,9 @@ a .Project-title,
 .article-teasers.projects a {
   color: #63847F;
 }
-.Page-title:hover a,
-a .Page-title:hover,
-.Page-body a:hover,
+.Article-title:hover a,
+a .Article-title:hover,
+.Article-body a:hover,
 a .Project-title:hover,
 .sticky-title.project a:hover, 
 .project-program-list .media-heading a:hover,

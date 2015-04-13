@@ -10,6 +10,9 @@
 .navbar nav>.menu>li:nth-child(2).expanded.dropdown.open ul {
     border: none;
 }
+.dropdown-menu>.active>a {
+    /*background-color: green;*/
+}
 
 
 
@@ -24,6 +27,12 @@
 #navbar nav > .navbar-nav > li.active-trail:nth-child(1) > a {
     background-color: #D2CBD8;
 }
+/* dropdown items */
+#navbar nav > .navbar-nav > li:nth-child(1) .dropdown-menu > li > a:hover,
+#navbar nav > .navbar-nav > li:nth-child(1) .dropdown-menu > li > a:focus,
+#navbar nav > .navbar-nav > .active-trail:nth-child(1) .dropdown-menu > li.active > a {
+    background-color: #D2CBD8;
+}
 
 
 /* 2nd menu item 
@@ -32,15 +41,16 @@
     background-color: #E7ECE6;
 }
 #navbar nav > .navbar-nav > li:nth-child(2) > a:hover,
-#navbar nav > .navbar-nav > li:nth-child(2) > a:focus,
+#navbar nav > .navbar-nav > li:nth-child(2) > a:focus
 #navbar nav > .navbar-nav > .active:nth-child(2) > a,
-#navbar nav > .navbar-nav > .active-trail:nth-child(2) > a {
+#navbar nav > .navbar-nav > .active-trail:nth-child(2) > a 
+{
     background-color: #B9D4D1;
 }
 /* dropdown items */
 #navbar nav > .navbar-nav > li:nth-child(2) .dropdown-menu > li > a:hover,
 #navbar nav > .navbar-nav > li:nth-child(2) .dropdown-menu > li > a:focus,
-#navbar nav > .navbar-nav > .active-trail:nth-child(2) .dropdown-menu > li > a {
+#navbar nav > .navbar-nav > .active-trail:nth-child(2) .dropdown-menu > li.active > a {
     background-color: #A9D0CB;
 }
 
