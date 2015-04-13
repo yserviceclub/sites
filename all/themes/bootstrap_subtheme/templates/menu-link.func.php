@@ -18,7 +18,7 @@ function bootstrap_subtheme_menu_link(array $variables) {
       $sub_menu = drupal_render($element['#below']);
     }
     //Here we need to change from ==1 to >=1 to allow for multilevel submenus
-    elseif ((!empty($element['#original_link']['depth'])) && ($element['#original_link']['depth'] >= 1)) {
+    elseif ((!empty($element['#original_link']['depth'])) && ($element['#original_link']['depth'] <= 2)) {
       // Add our own wrapper.
       unset($element['#below']['#theme_wrappers']);
       $sub_menu = '<ul class="dropdown-menu">' . drupal_render($element['#below']) . '</ul>';
