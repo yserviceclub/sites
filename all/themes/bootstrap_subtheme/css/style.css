@@ -48,6 +48,18 @@ h1, h2, h3, h4, h5, h6,
 font-family: 'Oswald', sans-serif; /* titles typeface */
 }
 
+
+/* post date on node page */
+span.submitted {
+	float: left;
+	margin-bottom: 0;
+}
+div.field-name-field-country {
+	float: left;
+	clear: left;
+}
+
+
 /* -------------
 	LINKS 
 	------------ */
@@ -317,6 +329,11 @@ div.article-teasers {
 	border: 1px solid #EAE1D2;
 	margin-bottom: 15px;
 }
+
+.thumbnail > a > img {
+	width: 100%;
+}
+
 /* -----------------
 	display above teaser list 
 	--------------- */

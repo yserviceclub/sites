@@ -59,11 +59,15 @@ header#navbar nav>.menu>li>a {
 }
 
 /* reset contextual menu if needed */
-//header#navbar div.contextual-links-wrapper ul.contextual-links li a {
+header#navbar div.contextual-links-wrapper ul.contextual-links li {
+	width: 100%;
+}
+header#navbar div.contextual-links-wrapper ul.contextual-links li a {
 	font-family: 'Droid Sans', arial, sans-serif;
-	font-size: 13.5px;
+	font-size: 12px;
 	font-weight: normal;
 	text-transform: none;
+	width: 100%;
 }
 
 /******
@@ -179,7 +183,7 @@ section#block-search-form .form-group {
    navigation menu styling
  -------------------------- */
 
-div.region-navigation>section.block ul li a {
+div.region-navigation>section.block > ul li a {
 	padding: 5px 10px 4px 10px;
 	font-size: 12px;
 	color: rgb(175, 175, 175);
@@ -199,9 +203,9 @@ div.region-navigation>section.block ul li.first.expanded.dropdown>a:hover {
 }
 
 /* background of the button when selecting dropdown menu */
-div.region-navigation>section.block ul li a:hover,
-div.region-navigation>section.block ul li a:focus,
-div.region-navigation>section.block ul li a:active {
+div.region-navigation>section.block > ul li a:hover,
+div.region-navigation>section.block > ul li a:focus,
+div.region-navigation>section.block > ul li a:active {
     background-color: #EEB9B0;
     color: white;
 }
@@ -225,6 +229,7 @@ div.region-navigation>section.block .dropdown-menu li.leaf {
 div.region-navigation>section.block .dropdown-menu li.leaf a {
 	color: #E29390;
 }
+div.region-navigation>section.block .dropdown-menu>li.active>a,
 div.region-navigation>section.block .dropdown-menu li.leaf a:hover,
 div.region-navigation>section.block .dropdown-menu li.leaf a:focus,
 div.region-navigation>section.block .dropdown-menu li.leaf a:active {
@@ -413,7 +418,7 @@ _       _
 	}
 
 	/* top navigation menu size */
-	div.region-navigation section.block ul li a{
+	div.region-navigation section.block > ul li a{
 		line-height: 1.1em;
 		font-size: 14px;
 	}

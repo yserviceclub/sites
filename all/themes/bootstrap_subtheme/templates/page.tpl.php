@@ -122,6 +122,7 @@
     <?php endif; ?>
 
     <?php print render($page['header']); ?>
+      <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
   </header> <!-- /#page-header -->
 
   <div class="row">
@@ -136,7 +137,7 @@
       <?php if (!empty($page['highlighted'])): ?>
         <div class="highlighted not-jumbotron"><?php print render($page['highlighted']); ?></div>
       <?php endif; ?>
-      <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
+      <!-- breadcrumb was here -->
       <a id="main-content"></a>
       <?php print render($title_prefix); ?>
       <?php if (!empty($title)): ?>
