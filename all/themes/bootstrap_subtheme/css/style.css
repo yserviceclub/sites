@@ -54,12 +54,16 @@ span.submitted {
 	float: left;
 	margin-bottom: 0;
 }
-div.field-name-field-country {
+div.field-type-taxonomy-term-reference
+/*div.field-name-field-country */
+{
 	float: left;
 	clear: left;
 }
-
-
+/* clear body texts */
+.field-name-body {
+	clear: both;
+}
 /* -------------
 	LINKS 
 	------------ */
@@ -148,6 +152,24 @@ a .News-title:hover,
 .label a {
 	color: white;
 }
+.read-more {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.views-more-link {
+	font-size: 12px;
+	float: right;
+	background-color: #89A4BF;
+	color: white;
+	border-radius: 3px;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+.views-more-link:hover {
+	color: white;
+	background-color: #7C95AD;
+}
 /* ------------------------------ */
 
 /* body text margin on news article full text page */
@@ -171,6 +193,9 @@ a .News-title:hover,
 	margin-bottom: 20px;
 }
 
+.make-relative-position {
+	position: relative;
+}
 
 /* ----------------
 	form pop-up menu
@@ -234,7 +259,6 @@ a .News-title:hover,
 	background: -ms-linear-gradient(top,  #ff3019 0%,#cf0404 100%); /* IE10+ */
 	background: linear-gradient(to bottom,  #ff3019 0%,#cf0404 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3019', endColorstr='#cf0404',GradientType=0 ); /* IE6-9 */
-
 }
 
 
@@ -375,7 +399,10 @@ div.view-frontpage div.thumbnail h4 {
 .post-date {
 	font-style: italic;
 }
-
+.country-list {
+	border-top: 1px solid #B6B6B6;
+	padding-top: 10px;
+}
 
 /*
 |----------------------|
