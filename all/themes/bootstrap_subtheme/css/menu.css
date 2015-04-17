@@ -266,6 +266,24 @@ add space under opened collapsed menu
 
 
 
+.about-us--sidebar-menu .nav>li>a {
+	font-weight: bold;
+	font-family: 'Architects Daughter', sans-serif;
+  	text-transform: uppercase;
+  	border-radius: 5px;
+}
+.about-us--sidebar-menu .nav>li>a:active,
+.about-us--sidebar-menu .nav>li>a:hover {
+  background-color: #EEB9B0;
+  color: white;
+}
+
+.about-us--sidebar-menu .nav>li>a:focus {
+  background-color: #E2AAA0;
+  color: white;
+}
+
+
 
 /*
 *
