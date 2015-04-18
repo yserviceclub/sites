@@ -23,7 +23,7 @@ function bootstrap_subtheme_menu_link(array $variables) {
       unset($element['#below']['#theme_wrappers']);
       $sub_menu = '<ul class="dropdown-menu">' . drupal_render($element['#below']) . '</ul>';
       // Generate as standard dropdown.
-      // $element['#title'] .= ' <span class="caret"></span>'; /* SmartMenus will add the caret */
+      $element['#title'] .= ' <span class="caret"></span>'; /* SmartMenus will add the caret */
       $element['#attributes']['class'][] = 'dropdown';
       $element['#localized_options']['html'] = TRUE;
 

@@ -25,6 +25,7 @@ regions[page_bottom]    = 'Page bottom'
 ;;;;;;;;;;;;;;;;;;;;;
 
 stylesheets[all][] = addons/bootstrap/jquery.smartmenus.bootstrap.css
+stylesheets[all][] = addons/yamm3-master/yamm/yamm.css
 stylesheets[all][] = css/style.css
 stylesheets[all][] = css/carousel.css
 stylesheets[all][] = css/product_page.css

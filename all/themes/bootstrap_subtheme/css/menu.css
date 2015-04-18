@@ -35,11 +35,31 @@ header#navbar {
 	background-color: transparent;
 	color: gray;
 	font-family: 'Architects Daughter', sans-serif;
-	text-transform: uppercase;
 	border: none;
 	border-bottom: 1px solid #EDE6DA;
-	-webkit-box-shadow: 0 30px 30px -40px rgba(0, 0, 0, 0.2);
-	box-shadow: 0 15px 60px -30px rgba(0, 0, 0, 0.2);
+}
+
+nav .menu>li>ul>.dropdown>a,
+nav .menu>li>a {
+	text-transform: uppercase;
+}
+nav .menu>li>ul>.dropdown>a {	
+	font-weight: bold;
+	background-color: #E7ECE6;
+}
+nav .menu > .dropdown > .dropdown-menu > .dropdown > a > .caret {
+	display: none;
+}
+nav > .menu > .dropdown > .dropdown-menu > .dropdown > .dropdown-menu a{
+	width: 100%;
+}
+nav > .menu > .dropdown > .dropdown-menu > .dropdown > .dropdown-menu {
+	display: block !important;
+	position: relative;
+	-webkit-box-shadow: none !important;
+	/*box-shadow: 0 15px 60px -30px rgba(0, 0, 0, 0.2);*/
+	box-shadow: none !important;
+	width: 100%;
 }
 
 
@@ -214,8 +234,8 @@ div.region-navigation>section.block > ul li a:active {
 div.region-navigation>section.block ul li ul.dropdown-menu {
     background-color: #FCF8F3;
     border: none;
-	-webkit-box-shadow: 0 6px 12px -5px rgba(0,0,0,0.175);
-	box-shadow: 0 6px 12px -5px rgba(0,0,0,0.175);
+/*	-webkit-box-shadow: 0 6px 12px -5px rgba(0,0,0,0.175);
+	box-shadow: 0 6px 12px -5px rgba(0,0,0,0.175);*/
 	padding: 0;
 	margin: 0;
 }
@@ -266,7 +286,7 @@ add space under opened collapsed menu
 
 
 
-.about-us--sidebar-menu .nav>li>a {
+.about-us--sidebar-menu>div>.nav>li>a {
 	font-weight: bold;
 	font-family: 'Architects Daughter', sans-serif;
   	text-transform: uppercase;
@@ -283,6 +303,17 @@ add space under opened collapsed menu
   color: white;
 }
 
+
+
+/* ----------------------
+	dropdown-menu styles
+	--------------------- */
+.dropdown-menu {
+	font-family: 'Droid Sans', arial, sans-serif;
+	font-weight: bold;
+	font-size: 13px;
+	/*text-transform: lowercase;*/
+}
 
 
 /*

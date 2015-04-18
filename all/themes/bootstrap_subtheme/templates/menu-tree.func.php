@@ -14,9 +14,9 @@ function bootstrap_subtheme_menu_tree(&$variables) {
 /**
  * Bootstrap theme wrapper function for the primary menu links.
  */
-// function bootstrap_menu_tree__primary(&$variables) {
-  // return '<ul class="menu nav navbar-nav">' . $variables['tree'] . '</ul>';
-// }
+function bootstrap_subtheme_menu_tree__primary(&$variables) {
+  return '<ul class="menu nav navbar-nav">' . $variables['tree'] . '</ul>';
+}
 
 /**
  * Bootstrap theme wrapper function for the secondary menu links.

@@ -442,25 +442,32 @@ body.maintenance-page  .second-paragraph {
 .project-program-list h4{
 	font-family: 'Droid Sans', arial, sans-serif;
 	font-weight: bold;
-	font-size: 16px;
+	font-size: 14px;
 	margin-top: 0;
 	margin-bottom: 0;
 }
 .project-program-list .views-bootstrap-grid-plugin-style{
-	border-radius: 0 0 5px 5px;
-	background-color: #E7ECE6;
+	border-radius: 0 0 7px 7px;
+	/*box-shadow: 2px 2px 15px 0 #A9D0CB;*/
 }
 .project-program-list h4 a{
+}
+.project-program-list h4 a{
+	/*border-bottom: 2px solid #F8F4ED;*/
+}
+.project-program-list .views-bootstrap-grid-plugin-style .row h4 a{
+	margin-bottom: 2px;
+	background-color: #E7ECE6;
 	display: inline-block;
 	width: 100%;
 	padding: 5px 10px;
-	border-bottom: 1px solid #F8F4ED;
+	border-radius: 5px;
 }
-.project-program-list h4 a:hover{
+.project-program-list .views-bootstrap-grid-plugin-style .row h4 a:hover{
+/*.project-program-list h4 a:hover{*/
 	background-color: #A9D0CB;
 	color: white;
 	text-decoration: none;
-	border-radius: 5px;
 }
 /*
 |--------------|

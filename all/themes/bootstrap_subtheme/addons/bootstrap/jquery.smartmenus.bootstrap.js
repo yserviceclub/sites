@@ -20,6 +20,7 @@
 				// $this.smartmenus({
 
 						subMenusMaxWidth: '',
+						subIndicators:	false,		// create sub menu indicators - creates a SPAN and inserts it in the A
 
 						// these are some good default options that should work for all
 						// you can, of course, tweak these as you like
