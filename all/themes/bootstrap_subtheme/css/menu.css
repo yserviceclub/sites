@@ -43,10 +43,6 @@ nav .menu>li>ul>.dropdown>a,
 nav .menu>li>a {
 	text-transform: uppercase;
 }
-nav .menu>li>ul>.dropdown>a {	
-	font-weight: bold;
-	background-color: #E7ECE6;
-}
 nav .menu > .dropdown > .dropdown-menu > .dropdown > a > .caret {
 	display: none;
 }

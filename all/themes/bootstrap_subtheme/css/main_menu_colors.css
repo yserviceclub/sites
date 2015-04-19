@@ -37,8 +37,12 @@
 
 /* 2nd menu item 
 *****************/
+nav .menu>li>ul>.dropdown>a {   
+    font-weight: bold;
+}
+nav .menu>li>ul>.dropdown>a,  
 #navbar nav > .navbar-nav > li:nth-child(2) > a {
-    background-color: #E7ECE6;
+    background-color: #D3ECE4;
 }
 #navbar nav > .navbar-nav > li:nth-child(2) > a:hover,
 #navbar nav > .navbar-nav > li:nth-child(2) > a:focus

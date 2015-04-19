@@ -423,6 +423,33 @@ body.maintenance-page  .second-paragraph {
 
 /*
 |--------------------------|
+|		country-list   	   |
+|--------------------------|
+*/
+.country-list .media .pull-left {
+	margin-right: 0;
+}
+.country-list .media-body {
+	margin-left: -15px;
+}
+.country-list .media-heading a {
+	width: 100%;
+	display: inline-block;
+	padding: 5px;
+	padding-left: 15px;
+}
+.country-list .media:hover a {
+	color: #A9D0CB;
+	text-decoration: none;
+}
+.country-list .media:hover img {
+	border: 1px solid #575757;
+	opacity: 0.5;
+}
+
+
+/*
+|--------------------------|
 |	project program list   |
 |--------------------------|
 */

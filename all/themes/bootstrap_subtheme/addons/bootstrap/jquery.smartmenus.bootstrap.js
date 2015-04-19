@@ -21,6 +21,9 @@
 
 						subMenusMaxWidth: '',
 						subIndicators:	false,		// create sub menu indicators - creates a SPAN and inserts it in the A
+						showTimeout:		0,		// timeout before showing the sub menus
+						hideTimeout:		0,		// timeout before hiding the sub menus
+						hideFunction: 	null,
 
 						// these are some good default options that should work for all
 						// you can, of course, tweak these as you like
