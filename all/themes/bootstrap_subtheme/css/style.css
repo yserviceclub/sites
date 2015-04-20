@@ -68,6 +68,19 @@ div.field-type-taxonomy-term-reference
 .field-name-body {
 	clear: both;
 }
+
+/* content region */
+.main-content-region {
+	margin-bottom: 30px;
+}
+
+/* center an image */
+.center-image img {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
 /* -------------
 	LINKS 
 	------------ */
@@ -326,6 +339,14 @@ section > div.highlighted {
   margin-left: 0;
   margin-bottom: 0;
 }
+/* title under image on small screens */
+.news-frontpage-teasers .teaser-image {
+	float: none !important;
+}
+.news-frontpage-teasers .teaser-image img {
+	margin-left: 0;
+	margin-bottom: 10px;
+}
 .upcoming-title,
 div.article-teasers ul.media-list > li.media .media-heading {
 	font-family: 'Droid Sans', arial, sans-serif;
@@ -408,6 +429,8 @@ div.view-frontpage div.thumbnail h4 {
 .country-list {
 	border-top: 1px solid #B6B6B6;
 	padding-top: 10px;
+	/*margin-left: 15px;*/
+	/*margin-right: 15px;*/
 }
 
 /*
@@ -636,7 +659,12 @@ img {
 
 .well.motto h2 {
 	font-size: 22px;
+	text-align: center;
 }
+.well.motto p {
+	text-align: center;
+}
+
 
 
 /* ----------------
@@ -684,7 +712,6 @@ the following media queries
 **************************************************/
 
 
-
 /* -------------------------------------
 Tiny devices (350px and up) 
 _   _   _
@@ -700,6 +727,26 @@ _|  _| |_| |_) _\_
 
 
 /* -------------------------------------
+Tiny devices (350px and up) 
+     _   _
+|_| |_  | |  _  _ _ 
+  |  _| |_| |_) _\_ 
+            |       
+--------------------------------------*/
+@media (min-width: 455px) {
+
+	/* title under image on small screens */
+	.news-frontpage-teasers .teaser-image {
+		float: left !important;
+	}
+	.news-frontpage-teasers .teaser-image img {
+		margin: auto;
+	}
+
+}
+
+
+/* -------------------------------------
 Small devices (tablets, 768px and up) 
 _       _
  | |_  |_|  _  _ _ 
@@ -708,19 +755,40 @@ _       _
 --------------------------------------*/
 @media (min-width: 768px) {
 
+	/* adjust column widths on 2 column layouts */
+	.row>section.col-sm-9 {
+		width: 67%;
+	}
+	.row>section.col-sm-9+aside.col-sm-6 {
+		width: 33%;
+		left: 0;
+	}
 
-.well.motto h2 {
-	font-size: 18px;
-}
 
-.donate-button a {
-	font-size: 26px;
-}
 
-.article-teasers .media-list .media-body {
-	padding-top: 10px;
-	clear: both; 	
-}
+	.well.motto h2 {
+		font-size: 18px;
+	}
+
+	.donate-button a {
+		font-size: 26px;
+	}
+
+	.article-teasers .media-list .media-body {
+		padding-top: 10px;
+		clear: both; 	
+	}
+
+	.country-list h4 a,
+	.project-program-list h3,
+	.project-program-list h4 a{
+		font-size: 84%;
+	}
+
+	.row>section.col-md-6+aside.col-md-3 .project-program-list h3,
+	.row>section.col-md-6+aside.col-md-3 .project-program-list h4 a {
+		font-size: 100%;
+	}
 
 }
 
@@ -733,18 +801,36 @@ _       _
  ----------------------------------------*/
 @media (min-width: 992px) {
 
-.well.motto h2 {
-	font-size: 22px;
-}
-.donate-button a {
-	font-size: 29px;
-}
-.article-teasers .media-list .media-body {
-	padding-top: 0;
-	clear: none; 	
-}
+	/* adjust column widths on 2 column layouts */
+	.row>section.col-sm-9 {
+		width: 72%;
+	}
+	.row>section.col-sm-9+aside.col-sm-6 {
+		width: 28%;
+	}
 
 
+	.well.motto h2 {
+		font-size: 22px;
+	}
+	.donate-button a {
+		font-size: 29px;
+	}
+	.article-teasers .media-list .media-body {
+		padding-top: 0;
+		clear: none; 	
+	}
+
+	.country-list h4 a,
+	.project-program-list h3,
+	.project-program-list h4 a{
+		font-size: 90%;
+	}
+
+	.row>section.col-md-6+aside.col-md-3 .project-program-list h3,
+	.row>section.col-md-6+aside.col-md-3 .project-program-list h4 a {
+		font-size: 82%;
+	}
 
 }
 
@@ -757,10 +843,29 @@ Large devices (large desktops, 1200px and up)
 ----------------------------------------------*/
 @media (min-width: 1200px) {
 
+	/* adjust column widths on 2 column layouts */
+	.row>section.col-sm-9 {
+		width: 75%;
+	}
+	.row>section.col-sm-9+aside.col-sm-6 {
+		width: 25%;
+	}
 
-.donate-button a {
-	font-size: 32px;
-}
+	.donate-button a {
+		font-size: 32px;
+	}
+
+	.country-list h4 a,
+	.project-program-list h3,
+	.project-program-list h4 a{
+		font-size: 100%;
+	}
+
+	.row>section.col-md-6+aside.col-md-3 .project-program-list h3,
+	.row>section.col-md-6+aside.col-md-3 .project-program-list h4 a {
+		font-size: 100%;
+	}
+
 
 
 }

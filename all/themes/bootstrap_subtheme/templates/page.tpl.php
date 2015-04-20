@@ -127,12 +127,6 @@
 
   <div class="row">
 
-    <?php if (!empty($page['sidebar_first'])): ?>
-      <aside class="col-sm-3" role="complementary">
-        <?php print render($page['sidebar_first']); ?>
-      </aside>  <!-- /#sidebar-first -->
-    <?php endif; ?>
-
     <section<?php print $content_column_class; ?>>
       <?php if (!empty($page['highlighted'])): ?>
         <div class="highlighted not-jumbotron"><?php print render($page['highlighted']); ?></div>
@@ -157,9 +151,15 @@
     </section>
 
     <?php if (!empty($page['sidebar_second'])): ?>
-      <aside class="col-sm-3" role="complementary">
+      <aside class="secondary-sidebar col-sm-6 col-sm-push-6 col-md-3 col-md-push-3" role="complementary">
         <?php print render($page['sidebar_second']); ?>
       </aside>  <!-- /#sidebar-second -->
+    <?php endif; ?>
+
+    <?php if (!empty($page['sidebar_first'])): ?>
+      <aside class="primary-sidebar col-sm-6 col-sm-pull-6 col-md-3 col-md-pull-9" role="complementary">
+        <?php print render($page['sidebar_first']); ?>
+      </aside>  <!-- /#sidebar-first -->
     <?php endif; ?>
 
   </div>
