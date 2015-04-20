@@ -26,6 +26,10 @@ img {
     max-width: 100%;
     height: 100%;
 }
+/* image float problem in Firefox */
+.field-name-field-featured-image {
+	clear: both;
+}
 /* try to make firefox accept a max-width % for img */
 .make-responsive {
 	max-width: 100%;
@@ -426,17 +430,24 @@ body.maintenance-page  .second-paragraph {
 |		country-list   	   |
 |--------------------------|
 */
+.country-list .media {
+	margin-top: 7px;
+}
 .country-list .media .pull-left {
 	margin-right: 0;
 }
 .country-list .media-body {
 	margin-left: -15px;
 }
+.country-list .media-heading {
+	margin: 0;
+}
 .country-list .media-heading a {
 	width: 100%;
 	display: inline-block;
-	padding: 5px;
+	padding: 0;
 	padding-left: 15px;
+	padding-top: 3px;
 }
 .country-list .media:hover a {
 	color: #A9D0CB;

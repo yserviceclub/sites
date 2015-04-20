@@ -143,10 +143,11 @@ nav>div.region-navigation>section.block {
 	clear: none;
 	margin-top: 0;
 	margin-bottom: 10px;
+	display: inline-block;
 }
 /* navigation menu only */
 div.region-navigation>section#block-system-navigation {
-	float: left;
+	/*float: left;*/
 }
 /* user-menu only */
 div.region-navigation>section#block-system-user-menu {
@@ -396,29 +397,29 @@ _       _
 
 	/* align the sections horizontally (navigation, login and search form) */
 	nav>div.region-navigation>section.block {
-		float: right;
+		/*float: right !important;*/
 	}
 	/* navigation menu only */
 	div.region-navigation>section#block-system-navigation {
-		float: right;
+		/*float: right;*/
 		position: relative;
-		top: 4px;
+		top: 1px;
 	}
 	/* user-menu only */
 	div.region-navigation>section#block-system-user-menu {
-		float: right;
+		float: none;
 		position: relative;
-		top: 4px;
+		top: 1px;
 	}
 	/* adjust position to align the login block */
 	div.region-navigation>section.block-bootstrap-login-modal {
-		float: right;
+		float: none;
 		position: relative;
-		top: 4px;
+		top: 2px;
 	}
 	/* horizontally align the navigation menu items */
 	nav>div.region-navigation>section.block ul li {
-		float: left;
+		float: right;
 	}
 
 	/* --------------
@@ -427,7 +428,7 @@ _       _
 	nav>div.region-navigation>section#block-search-form {
 		width: 20%;
 		margin-left: 15px;
-		float: right;
+		float: right !important;
 	}
 
 	/*******

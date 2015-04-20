@@ -1,0 +1,14 @@
+filename = "YServiceInternationalOttawa-2015-04-19T22-57-16"
+description = "firefox image bug fix
+login position fix
+change about-us menu default"
+datestamp = "1429498638"
+generator = "Backup and Migrate (http://drupal.org/project/backup_migrate)"
+generatorversion = "7.x-3.x"
+siteurl = "http://yserviceclub/website/"
+sitename = "Y Service International Ottawa"
+drupalversion = "7.35"
+filesize = "777533"
+bam_sourceid = "db"
+bam_sourcetype = "mysql"
+bam_sourcename = "Default Database"
