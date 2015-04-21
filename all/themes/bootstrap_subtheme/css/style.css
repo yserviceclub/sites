@@ -279,6 +279,39 @@ a .News-title:hover,
 }
 
 
+.YMCA-donate-btn {
+	width: 65%;
+	margin: 15px auto;
+}
+.YMCA-donate-btn p {
+	font-size: 125%;
+	font-family: 'Architects Daughter', sans-serif;
+	text-align: center;
+}
+
+
+.YMCA-donate-btn .donate-sprite a {
+	display: block;
+	margin: 15px auto;
+	width: 350px;
+	height: 60px;
+	background: url(../logos/donate-btn-bg-sprites.png) 0px 0px no-repeat;
+	border: solid #BFBFBF 1px;
+	border-top: solid #FFFFFF 1px;
+	border-radius: 5px;
+}
+
+
+.YMCA-donate-btn .donate-sprite a:hover {
+	background-position: 0px -58px;
+	border: solid #CDCDCD 1px;
+	border-bottom: solid #FFFFFF 1px;
+}
+.YMCA-donate-btn .donate-sprite a:active {
+	background-position: 0px -116px;
+}
+
+
 
 /*
 |------------------------------|

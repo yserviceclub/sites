@@ -39,6 +39,68 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 
 
+.shop-block {
+	margin-top: 30px;
+}
+
+
+/* -----------------
+	shop node page 
+	------------- */
+
+.node-shop a,
+.product-grid a {
+	color: #2D6417 ;
+}
+.node-shop a:hover,
+.product-grid a:hover {
+	color: #469D24 ;
+}
+
+.node-shop .field-name-field-product-tag {
+	width: 50%;
+	float: left;
+	clear: none;
+	margin-bottom: 10px;
+}
+.node-shop .field-label {
+	font-weight: normal;
+}
+.node-shop .field-label + .field-items {
+	font-weight: bold;
+	float: left;
+}
+
+
+.node-shop .field-name-field-product-tag .field-label + .field-items {
+	background-color: #D1E5C9;
+	padding: 2px 10px;
+	border-radius: 4px;
+}
+
+
+.node-shop .field-name-field-ordering-code {
+	width: 50%;
+	float: left;
+	clear: none;
+	border-bottom: 3px dashed #D1E5C9;
+	padding-bottom: 15px;
+}
+
+.node-shop .field-name-field-featured-image {
+	width: 50%;
+	float: left;
+	clear: none;
+	padding-right: 15px;
+}
+.node-shop .field-name-body {
+	width: 100%;
+	float: left;
+	clear: both;
+}
+
+
+
 
 
 /*
@@ -71,18 +133,22 @@ the following media queries
 
 /* -------------------------------------
 Tiny devices (350px and up) 
-_   _   _
-_| |_  | |  _  _ _ 
-_|  _| |_| |_) _\_ 
-           |       
+ _   _   _ 
+|_  | | | |  _  _ _ 
+ _| |_| |_| |_) _\_ 
+            |       
 --------------------------------------*/
-@media (min-width: 355px) {
+@media (min-width: 500px) {
 
-
+	.node-shop .field-label + .field-items {
+		float: right;
+	}
+	.node-shop .field-name-body {
+		width: 50%;
+		clear: none;
+	}
 
 }
-
-
 
 /* -------------------------------------
 Small devices (tablets, 768px and up) 

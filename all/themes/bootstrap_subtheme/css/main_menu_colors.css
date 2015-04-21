@@ -62,7 +62,7 @@ nav .menu>li>ul>.dropdown>a,
 /* 3rd menu item 
 ******************/
 #navbar nav > .navbar-nav > li:nth-child(3) > a {
-    background-color: #F6EDDB;
+    background-color: #F0E6D0;
 }
 #navbar nav > .navbar-nav > li:nth-child(3) > a:hover,
 #navbar nav > .navbar-nav > li:nth-child(3) > a:focus,
@@ -75,7 +75,7 @@ nav .menu>li>ul>.dropdown>a,
 /* 4th menu item 
 *****************/
 #navbar nav > .navbar-nav > li:nth-child(4) > a {
-    background-color: #E7EEDF;
+    background-color: #E0EDD0;
 }
 #navbar nav > .navbar-nav > li:nth-child(4) > a:hover,
 #navbar nav > .navbar-nav > li:nth-child(4) > a:focus,
