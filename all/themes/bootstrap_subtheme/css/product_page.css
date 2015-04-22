@@ -48,14 +48,6 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 	shop node page 
 	------------- */
 
-.node-shop a,
-.product-grid a {
-	color: #2D6417 ;
-}
-.node-shop a:hover,
-.product-grid a:hover {
-	color: #469D24 ;
-}
 
 .node-shop .field-name-field-product-tag {
 	width: 50%;
@@ -72,7 +64,7 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 }
 
 
-.node-shop .field-name-field-product-tag .field-label + .field-items {
+.node-shop .field-name-field-product-tag .field-label + .field-items a {
 	background-color: #D1E5C9;
 	padding: 2px 10px;
 	border-radius: 4px;
@@ -100,8 +92,113 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 }
 
 
+/* shop list */
+.shop-list {
+	padding-left: 0;
+}
+.shop-cat-list h3 {
+	margin: 0;
+}
+.cat-shop {
+	font-size: 18px;
+	margin-bottom: 2px;
+	background-color: #D9EFD5;
+	display: inline-block;
+	width: 100%;
+	padding: 5px 10px;
+	border-radius: 5px;
+}
+.node-shop .field-name-field-product-tag .field-label + .field-items a:hover,
+.cat-shop:hover {
+	text-decoration: none;
+	background-color: #6EB254;
+	color: #FFF;
+	text-shadow: 0px 0px 5px #20570B;
+}
 
 
+/* shop display grid */
+.shop-display .row .col {
+	height: 100%;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.shop-display h3 {
+	font-size: 20px;
+	border-top: 3px dotted #D1E5C9;
+	margin: 0;
+}
+.shop-display img {
+	width: 100%;
+}
+
+.shop-display h3 a {
+	padding-top: 15px;
+	padding-bottom: 10px;
+	display: block;
+	text-shadow: 
+		0px 1px 0px #FFFFFF, 
+		0px 1px 5px #BDB09A;
+}
+.shop-display .row div.col:hover a {
+	text-decoration: none; 
+	color: #469D24;
+	text-shadow: none;
+}
+.shop-display .row div.col:hover img {
+	opacity: 0.75;
+}
+.shop-display .row div.col:active a {
+	text-decoration: none; 
+	color: #1E430F;
+	text-shadow: none;
+}
+.shop-display .row div.col:active img {
+	opacity: 1;
+}
+.order-code a {
+	padding-bottom: 10px;
+	width: 100%;
+	display: block;
+}
+
+/* taxonomy product category page */
+.Shop-title a {
+	display: block;
+}
+.shop-page-teasers .thumbnail {
+	background-color: #F9FCF7;
+	border-color: #DEEAD7;
+}
+.shop-page-teasers .thumbnail:hover {
+	background-color: #FFFFFF;
+	border-color: #CBE9BA;
+}
+.shop-page-teasers .thumbnail img {
+	opacity: 1;
+	-webkit-transition: opacity 0.2s ease-in-out;
+	-moz-transition: opacity 0.2s ease-in-out;
+	-ms-transition: opacity 0.2s ease-in-out;
+	-o-transition: opacity 0.2s ease-in-out;
+	transition: opacity 0.2s ease-in-out;
+}
+	
+.shop-page-teasers .thumbnail:hover img {
+	opacity: 0.75;
+}
+.shop-page-teasers .thumbnail:hover a {
+	text-decoration: none;
+}
+.Shop-body,
+.Shop-title {
+	margin: 0;
+}
+.Shop-body a,
+.Shop-title a {
+	padding-bottom: 10px;
+	padding-top: 10px;
+	display: block;
+}
 
 /*
 *

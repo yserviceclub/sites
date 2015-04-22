@@ -90,6 +90,32 @@ td.today {
 }
 
 
+/* -----------------------
+	 Event node 
+	----------------------- */
+.node-event .field-name-field-event-date {
+	margin-top: 10px;
+	padding: 10px;
+	background-color: #FDFAF3;
+	border: 1px solid #EAE1D2;
+	clear: both;
+}
+
+.node-event .field-name-field-event-date .field-label {
+	font-family: 'Architects Daughter', sans-serif;
+	/*font-weight: bolder;*/
+	color: #977A3E;
+	text-transform: uppercase;
+}
+.node-event .field-name-field-event-date .field-item {
+	border-bottom: 1px dotted #EAE1D2;
+}
+.node-event .field-name-field-event-date .field-item.even {
+	background-color: #F9F5ED;
+}
+
+
+
 /*
 *
 *

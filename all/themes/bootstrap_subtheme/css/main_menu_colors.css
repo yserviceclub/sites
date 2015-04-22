@@ -68,7 +68,7 @@ nav .menu>li>ul>.dropdown>a,
 #navbar nav > .navbar-nav > li:nth-child(3) > a:focus,
 #navbar nav > .navbar-nav > .active:nth-child(3) > a,
 #navbar nav > .navbar-nav > .active-trail:nth-child(3) > a {
-    background-color: #F6E3BC;
+    background-color: #F3DBAB;
 }
 
 
@@ -81,7 +81,7 @@ nav .menu>li>ul>.dropdown>a,
 #navbar nav > .navbar-nav > li:nth-child(4) > a:focus,
 #navbar nav > .navbar-nav > .active:nth-child(4) > a,
 #navbar nav > .navbar-nav > .active-trail:nth-child(4) > a {
-    background-color: #CCE4C8;
+    background-color: #B3D2A1;
 }
 
 

@@ -28,7 +28,6 @@ stylesheets[all][] = addons/bootstrap/jquery.smartmenus.bootstrap.css
 stylesheets[all][] = addons/yamm3-master/yamm/yamm.css
 stylesheets[all][] = css/style.css
 stylesheets[all][] = css/carousel.css
-stylesheets[all][] = css/product_page.css
 stylesheets[all][] = css/calendar.css
 stylesheets[all][] = css/footer.css
 stylesheets[all][] = css/admin_menu.css
@@ -36,6 +35,7 @@ stylesheets[all][] = css/menu.css
 stylesheets[all][] = css/login_modal.css
 stylesheets[all][] = css/header-titles.css
 stylesheets[all][] = css/newsletter.css
+stylesheets[all][] = css/product_page.css
 stylesheets[all][] = css/main_menu_colors.css
 
 
