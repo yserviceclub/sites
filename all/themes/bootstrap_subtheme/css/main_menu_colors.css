@@ -42,7 +42,8 @@ nav .menu>li>ul>.dropdown>a {
 }
 nav .menu>li>ul>.dropdown>a,  
 #navbar nav > .navbar-nav > li:nth-child(2) > a {
-    background-color: #D3ECE4;
+    background-color: #D7E9E3;
+    /*background-color: #D3ECE4;*/
 }
 #navbar nav > .navbar-nav > li:nth-child(2) > a:hover,
 #navbar nav > .navbar-nav > li:nth-child(2) > a:focus

@@ -4,6 +4,24 @@
  * menu-tree.func.php
  */
 
+
+
+
+
+
+
+/**
+ * Overrides theme_menu_tree().
+ */
+function bootstrap_subtheme_menu_tree__menu_block__3(&$variables) {
+  return '<ul class="menu nav">' . $variables['tree'] . '</ul>';
+}
+
+
+
+
+
+
 /**
  * Overrides theme_menu_tree().
  */
@@ -15,7 +33,7 @@ function bootstrap_subtheme_menu_tree(&$variables) {
  * Bootstrap theme wrapper function for the primary menu links.
  */
 function bootstrap_subtheme_menu_tree__primary(&$variables) {
-  return '<ul class="menu nav navbar-nav">' . $variables['tree'] . '</ul>';
+  return '<ul class="menu nav navbar-nav sm">' . $variables['tree'] . '</ul>';
 }
 
 /**

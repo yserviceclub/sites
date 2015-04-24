@@ -14,10 +14,10 @@
 	$(function() {
 
 		// init all menus
-		$('ul.menu.nav').each(function() {
+		$('ul.sm').each(function() {
 				var $this = $(this);
-				$this.addClass('sm').smartmenus({
-				// $this.smartmenus({
+				// $this.addClass('sm').smartmenus({
+				$this.smartmenus({
 
 						subMenusMaxWidth: '',
 						subIndicators:	false,		// create sub menu indicators - creates a SPAN and inserts it in the A

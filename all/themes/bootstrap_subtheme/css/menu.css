@@ -236,7 +236,7 @@ div.region-navigation>section.block > ul li a:active {
 
 /* dropdown background */
 div.region-navigation>section.block ul li ul.dropdown-menu {
-    background-color: #FCF8F3;
+    background-color: #FEFBF8;
     border: none;
 /*	-webkit-box-shadow: 0 6px 12px -5px rgba(0,0,0,0.175);
 	box-shadow: 0 6px 12px -5px rgba(0,0,0,0.175);*/
@@ -295,16 +295,34 @@ add space under opened collapsed menu
 	font-family: 'Architects Daughter', sans-serif;
   	text-transform: uppercase;
   	border-radius: 5px;
+  	background-color: #FDFAF3;
+	text-shadow: 0px 1px 0px #FFFFFF;
+	box-shadow: 0px 1px 0px #BED2C9,
+				0px -1px 0px #FFFFFF,
+				inset 5px 0px 15px rgba(255,255,255,0.5),
+				1px 0px 5px -3px #000;
+	background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.25) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,0.25))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.25) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.25) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.25) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.25) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#40ffffff',GradientType=0 ); /* IE6-9 */
+
 }
 .about-us--sidebar-menu .nav>li>a:active,
 .about-us--sidebar-menu .nav>li>a:hover {
-  background-color: #EEB9B0;
-  color: white;
+	background-color: #EEB9B0;
+	color: #FFFFFF;
+	text-shadow: 0px 0px 1px #CA9797;
+	box-shadow: 0px -1px 0px #DB8C8C,
+				0px 1px 0px #FFFFFF;
 }
 
 .about-us--sidebar-menu .nav>li>a:focus {
   background-color: #E2AAA0;
   color: white;
+	text-shadow: 0px -1px 0px #CA9797;
 }
 
 

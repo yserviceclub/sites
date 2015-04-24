@@ -64,8 +64,30 @@
 .sidebar-header.news,
 .sidebar-header.project,
 .sidebar-header.newsletter {
+  margin: -10px;
   margin-top: 0;
   margin-bottom: 0;
+}
+div.related-content .sidebar-header {
+  font-weight: normal;
+  padding-top: 5px;
+  margin-bottom: 10px;
+}
+div.related-content .sidebar-header span {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+div.related-content h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-top: 1px solid #A8A6A3;
+  border-bottom: 1px solid #EAE7E1;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+div.related-content h3 a {
+  display: inline-block;
+  width: 100%;
 }
 
 /* NEWSLETTER - #5263A6 */

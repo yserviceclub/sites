@@ -81,6 +81,10 @@ div.field-type-taxonomy-term-reference
 	margin-right: auto;
 }
 
+/* no content displayed in views */
+.view-empty .no-articles {
+	margin-bottom: 10px;
+}
 
 /* -------------
 	LINKS 
@@ -89,6 +93,7 @@ a {
   color: #924542;
 }
 /* PROJECT */
+.projects-and-programs-menu-block .menu a,
 .Article-title a,
 a .Article-title,
 .Article-body a,
@@ -100,6 +105,7 @@ a .Project-title,
 .article-teasers.projects a {
   color: #63847F;
 }
+.projects-and-programs-menu-block .menu a:hover,
 .Article-title:hover a,
 a .Article-title:hover,
 .Article-body a:hover,
@@ -110,6 +116,7 @@ a .Project-title:hover,
 .article-teasers.projects a:hover {
   color: #7BA49E;
 }
+.projects-and-programs-menu-block .menu a:active,
 .Article-title:active a,
 a .Article-title:active,
 .Article-body a:active,
@@ -354,6 +361,7 @@ a .News-title:active,
 .YMCA-donate-btn .donate-sprite a {
 	display: block;
 	margin: 15px auto;
+	/*margin-top: 0;*/
 	width: 350px;
 	height: 60px;
 	background: url(../logos/donate-btn-bg-sprites.png) 0px 0px no-repeat;
@@ -465,13 +473,27 @@ div.article-teasers ul.media-list > li.media:first-of-type {
 	border: none;
 }
 div.article-teasers {
-	margin-top: 0;
+	margin-top: 5px;
+	/*padding-top: 5px;*/
 	padding-left: 10px;
 	padding-right: 10px;
 	background-color: #FDFAF3;
 	border: 1px solid #EAE1D2;
 	margin-bottom: 15px;
 }
+div.article-teasers div.article-teasers + div.article-teasers {
+	padding-top: 0;
+}
+div.article-teasers div.article-teasers {
+	margin-top: 0;
+	padding-left: 0;
+	padding-right: 0;
+	background-color: transparent;
+	border: none;
+	margin-bottom: 10px;
+}
+
+
 
 .thumbnail > a > img {
 	width: 100%;
@@ -505,6 +527,7 @@ div.article-teasers {
 	width: 100%;
 }
 
+div.related-content .sidebar-header,
 div.project-program-list .sidebar-header,
 div.country-list .sidebar-header {
 	margin-left: -10px;
@@ -524,6 +547,18 @@ div.view-frontpage div.thumbnail h4 {
 	border-top: 1px solid #B6B6B6;
 	padding-top: 10px;
 }
+
+/*
+|-------------------------|
+|	frontpage about us    |
+|-------------------------|
+*/
+
+.frontpage-about-us {
+	background-color: #FDFAF3;
+}
+
+
 
 /*
 |----------------------|
@@ -586,6 +621,7 @@ body.maintenance-page  .second-paragraph {
 |	project program list   |
 |--------------------------|
 */
+div.related-content h3,
 .project-program-list h3{
   font-size: 14px;
   margin-top: 15px;
@@ -625,6 +661,48 @@ body.maintenance-page  .second-paragraph {
 	background-color: #5CA99F;
 }
 
+/* -----------
+	related content by project sidebar
+	---------------- */
+
+div.related-content.by-project .media-heading {
+	position: relative;
+}
+div.related-content.by-project .media-heading {
+	display: block;
+	width: 100%;
+	padding-bottom: 15px;
+	margin-bottom: 0;
+}
+div.related-content.by-project .media-body a .content-title {
+	display: block;
+	width: 100%;
+}
+div.related-content.by-project .media-heading .type-label{
+	font-size: 10px;
+	text-transform: uppercase;
+	position: absolute;
+	top: 0;
+	display: block;
+	width: 100%;
+}
+
+/* --------------------------------
+	related content by category
+	------------------------------ */
+div.related-content.by-category {
+	margin-top: 30px;
+}
+div.related-content.by-category .teaser-image {
+	margin-right: 0;
+}
+
+div.related-content.by-category h4 .content-title {
+	display: inline-block;
+	padding-top: 10px;
+	width: 100%;
+
+}
 
 
 /*
@@ -674,7 +752,7 @@ section#block-fb-social-fb-like {
 
 /* **** PAGINATION ***** */
 .pagination {
-	font-size: 14px;
+	font-size: 12px;
 	margin: 0;
 }
 .pagination li span, 
@@ -684,6 +762,9 @@ section#block-fb-social-fb-like {
 }
 .view-frontpage .pagination {
 	margin-top: 15px;
+}
+.pagination>li>a, .pagination>li>span {
+  background-color: #FFFEFA;
 }
 
 
@@ -775,7 +856,81 @@ div.article-teasers.recently-added-events .header-label {
 
 
 
+/* -------------------------------
+	projects and programs menu block
+	----------------------------- */
 
+.projects-and-programs-menu-block {
+	margin-bottom: 15px;
+}
+.projects-and-programs-menu-block .block-title {
+	font-family: "Architects Daughter", sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	border-top: 1px solid #B6B6B6;
+	padding-top: 10px;
+	color: #777777;
+	margin-top: 0;
+}
+
+.projects-and-programs-menu-block .menu a {
+	margin-bottom: 2px;
+	background-color: #E7ECE6;
+	width: 100%;
+	padding: 5px 10px;
+	border-radius: 5px;
+	font-family: 'Droid Sans', arial, sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	text-shadow: 0px 1px 0px #FFFFFF;
+	box-shadow: 0px 1px 0px #BED2C9,
+				0px -1px 0px #FFFFFF;
+}
+.projects-and-programs-menu-block .menu .dropdown > a > .caret {
+	display: none;
+}
+.projects-and-programs-menu-block .menu .dropdown > a {
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	background-color: #D7E3DF;
+	margin-bottom: 0;
+	margin-top: 5px;
+	box-shadow: 0px 1px 1px #A6B5AE,
+				0px -1px 0px #FFFFFF;
+}
+.projects-and-programs-menu-block .menu .dropdown {
+	display: inline-block;
+	width: 100%;
+}
+.projects-and-programs-menu-block .menu .dropdown .dropdown-menu {
+	display: block;
+	position: relative;
+	width: 100%;
+	background-color: transparent;
+	box-shadow: none;
+	border: none;
+}
+.projects-and-programs-menu-block .menu a:hover {
+	background-color: #A9D0CB;
+	color: white;
+	text-shadow: 0px 0px 1px #3A6E67;
+}
+.projects-and-programs-menu-block .menu a.active:focus,
+.projects-and-programs-menu-block .menu a.active,
+.projects-and-programs-menu-block .menu a:focus,
+.projects-and-programs-menu-block .menu a:active {
+	background-color: #89BEB5;
+	color: #F0F4F4;
+	text-shadow: 0px 0px 3px #3A6E67;
+}
+
+
+/* -----------------
+	contact page
+	------------------ */
+body.page-contact section.main-content-region .page-header {
+	display: none;
+}
 
 
 
@@ -874,11 +1029,15 @@ _       _
 	}
 
 	.country-list h4 a,
+	div.related-content h3,
+	.projects-and-programs-menu-block .menu a,
 	.project-program-list h3,
 	.project-program-list h4 a{
 		font-size: 84%;
 	}
 
+	.row>section.col-md-6+aside.col-md-3 div.related-content h3,
+	.row>section.col-md-6+aside.col-md-3 .projects-and-programs-menu-block .menu a,
 	.row>section.col-md-6+aside.col-md-3 .project-program-list h3,
 	.row>section.col-md-6+aside.col-md-3 .project-program-list h4 a {
 		font-size: 100%;
@@ -916,11 +1075,15 @@ _       _
 	}
 
 	.country-list h4 a,
+	div.related-content h3,
+	.projects-and-programs-menu-block .menu a,
 	.project-program-list h3,
 	.project-program-list h4 a{
 		font-size: 90%;
 	}
 
+	.row>section.col-md-6+aside.col-md-3 div.related-content h3,
+	.row>section.col-md-6+aside.col-md-3 .projects-and-programs-menu-block .menu a,
 	.row>section.col-md-6+aside.col-md-3 .project-program-list h3,
 	.row>section.col-md-6+aside.col-md-3 .project-program-list h4 a {
 		font-size: 82%;
@@ -950,11 +1113,15 @@ Large devices (large desktops, 1200px and up)
 	}
 
 	.country-list h4 a,
+	div.related-content h3,
+	.projects-and-programs-menu-block .menu a,
 	.project-program-list h3,
 	.project-program-list h4 a{
 		font-size: 100%;
 	}
 
+	.row>section.col-md-6+aside.col-md-3 div.related-content h3,
+	.row>section.col-md-6+aside.col-md-3 .projects-and-programs-menu-block .menu a,
 	.row>section.col-md-6+aside.col-md-3 .project-program-list h3,
 	.row>section.col-md-6+aside.col-md-3 .project-program-list h4 a {
 		font-size: 100%;

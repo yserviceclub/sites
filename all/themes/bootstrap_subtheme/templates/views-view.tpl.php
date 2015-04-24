@@ -61,11 +61,9 @@
     </div>
   <?php endif; ?>
 
-  <!-- position pager above or below content -->
   <?php if ($pager): ?>
     <?php print $pager; ?>
   <?php endif; ?>
-  <!-- END position pager above or below content -->
 
   <?php if ($attachment_after): ?>
     <div class="attachment attachment-after">
@@ -90,4 +88,3 @@
   <?php endif; ?>
 
 </div><?php /* class view */ ?>
-<!-- END costumize VIEWS template -->
