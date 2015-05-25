@@ -15,89 +15,93 @@
 }
 
 
-
-/* 1st menu item 
-******************/
+/* ABOUT US menu item 
+**********************/
 #navbar nav > .navbar-nav > li:nth-child(1) > a {
-    background-color: #E9E6EC;
+    background-color: #F5E5DD;
 }
 #navbar nav > .navbar-nav > li:nth-child(1) > a:hover,
 #navbar nav > .navbar-nav > li:nth-child(1) > a:focus,
-#navbar nav > .navbar-nav > li.active:nth-child(1) > a,
-#navbar nav > .navbar-nav > li.active-trail:nth-child(1) > a {
-    background-color: #D2CBD8;
+#navbar nav > .navbar-nav > .active:nth-child(1) > a,
+#navbar nav > .navbar-nav > .active-trail:nth-child(1) > a {
+    background-color: #EEB9B0;
 }
 /* dropdown items */
 #navbar nav > .navbar-nav > li:nth-child(1) .dropdown-menu > li > a:hover,
 #navbar nav > .navbar-nav > li:nth-child(1) .dropdown-menu > li > a:focus,
 #navbar nav > .navbar-nav > .active-trail:nth-child(1) .dropdown-menu > li.active > a {
-    background-color: #D2CBD8;
+    background-color: #EEB9B0;
 }
 
 
-/* 2nd menu item 
-*****************/
-nav .menu>li>ul>.dropdown>a {   
-    font-weight: bold;
-}
-nav .menu>li>ul>.dropdown>a,  
+/* NEWS menu item 
+******************/
 #navbar nav > .navbar-nav > li:nth-child(2) > a {
-    background-color: #D7E9E3;
-    /*background-color: #D3ECE4;*/
+    background-color: #E9E6EC;
 }
 #navbar nav > .navbar-nav > li:nth-child(2) > a:hover,
-#navbar nav > .navbar-nav > li:nth-child(2) > a:focus
-#navbar nav > .navbar-nav > .active:nth-child(2) > a,
-#navbar nav > .navbar-nav > .active-trail:nth-child(2) > a 
-{
-    background-color: #B9D4D1;
+#navbar nav > .navbar-nav > li:nth-child(2) > a:focus,
+#navbar nav > .navbar-nav > li.active:nth-child(2) > a,
+#navbar nav > .navbar-nav > li.active-trail:nth-child(2) > a {
+    background-color: #D2CBD8;
 }
 /* dropdown items */
 #navbar nav > .navbar-nav > li:nth-child(2) .dropdown-menu > li > a:hover,
 #navbar nav > .navbar-nav > li:nth-child(2) .dropdown-menu > li > a:focus,
 #navbar nav > .navbar-nav > .active-trail:nth-child(2) .dropdown-menu > li.active > a {
+    background-color: #D2CBD8;
+}
+
+
+/* PROJHECTS menu item 
+***********************/
+nav .menu>li>ul>.dropdown>a {   
+    font-weight: bold;
+}
+nav .menu>li>ul>.dropdown>a,  
+#navbar nav > .navbar-nav > li:nth-child(3) > a {
+    background-color: #D7E9E3;
+    /*background-color: #D3ECE4;*/
+}
+#navbar nav > .navbar-nav > li:nth-child(3) > a:hover,
+#navbar nav > .navbar-nav > li:nth-child(3) > a:focus
+#navbar nav > .navbar-nav > .active:nth-child(3) > a,
+#navbar nav > .navbar-nav > .active-trail:nth-child(3) > a 
+{
+    background-color: #B9D4D1;
+}
+/* dropdown items */
+#navbar nav > .navbar-nav > li:nth-child(3) .dropdown-menu > li > a:hover,
+#navbar nav > .navbar-nav > li:nth-child(3) .dropdown-menu > li > a:focus,
+#navbar nav > .navbar-nav > .active-trail:nth-child(3) .dropdown-menu > li.active > a {
     background-color: #A9D0CB;
 }
 
 
-/* 3rd menu item 
-******************/
-#navbar nav > .navbar-nav > li:nth-child(3) > a {
-    background-color: #F0E6D0;
-}
-#navbar nav > .navbar-nav > li:nth-child(3) > a:hover,
-#navbar nav > .navbar-nav > li:nth-child(3) > a:focus,
-#navbar nav > .navbar-nav > .active:nth-child(3) > a,
-#navbar nav > .navbar-nav > .active-trail:nth-child(3) > a {
-    background-color: #F3DBAB;
-}
-
-
-/* 4th menu item 
-*****************/
+/* CALENDAR menu item 
+**********************/
 #navbar nav > .navbar-nav > li:nth-child(4) > a {
-    background-color: #E0EDD0;
+    background-color: #F0E6D0;
 }
 #navbar nav > .navbar-nav > li:nth-child(4) > a:hover,
 #navbar nav > .navbar-nav > li:nth-child(4) > a:focus,
 #navbar nav > .navbar-nav > .active:nth-child(4) > a,
 #navbar nav > .navbar-nav > .active-trail:nth-child(4) > a {
-    background-color: #B3D2A1;
+    background-color: #F3DBAB;
 }
 
 
-/* 5th menu item 
-******************/
+/* SHOP menu item 
+*******************/
 #navbar nav > .navbar-nav > li:nth-child(5) > a {
-    background-color: #F5E5DD;
+    background-color: #E0EDD0;
 }
 #navbar nav > .navbar-nav > li:nth-child(5) > a:hover,
 #navbar nav > .navbar-nav > li:nth-child(5) > a:focus,
 #navbar nav > .navbar-nav > .active:nth-child(5) > a,
 #navbar nav > .navbar-nav > .active-trail:nth-child(5) > a {
-    background-color: #EEB9B0;
+    background-color: #B3D2A1;
 }
-
 
 
 /* 6th menu item 
