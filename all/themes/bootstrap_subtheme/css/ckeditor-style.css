@@ -17,3 +17,39 @@ body {
 }
 
 */
+
+
+.normal-paragraph {
+	font-family: 'Droid Sans', arial, sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	margin: 0 0 10.5px;
+}
+
+.subtitle- {
+	font-family: Oswald, sans-serif;
+	font-weight: bold;
+	color: black;
+}
+
+.subtitle-big {
+	font-size: 28px;
+}
+
+.subtitle-small {
+	font-size: 19px;
+}
+
+.script- {
+	font-family: 'Architects Daughter', sans-serif;	
+	color: black;
+}
+
+.script-big {
+	font-size: 28px;
+}
+
+.script-small {
+	font-size: 19px;
+}
+

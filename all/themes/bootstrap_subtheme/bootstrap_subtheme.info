@@ -37,6 +37,7 @@ stylesheets[all][] = css/header-titles.css
 stylesheets[all][] = css/newsletter.css
 stylesheets[all][] = css/product_page.css
 stylesheets[all][] = css/main_menu_colors.css
+stylesheets[all][] = css/ckeditor-style.css
 
 
 ;;;;;;;;;;;;;;;;;;;;;
