@@ -17,16 +17,27 @@
 
 /* ABOUT US menu item 
 **********************/
+/* the menu item color */
 #navbar nav > .navbar-nav > li:nth-child(1) > a {
     background-color: #F5E5DD;
+    background-color: #F5D7C8;
 }
+/* make all submenus bold */
+nav .menu>li>ul>.dropdown>a {   
+    font-weight: bold;
+}
+/* submenu parent background color */
+#navbar nav > .navbar-nav > li:nth-child(1) > ul > .dropdown > a {
+    background-color: #F5D7C8;
+}
+/* hover over the menu item */
 #navbar nav > .navbar-nav > li:nth-child(1) > a:hover,
 #navbar nav > .navbar-nav > li:nth-child(1) > a:focus,
 #navbar nav > .navbar-nav > .active:nth-child(1) > a,
 #navbar nav > .navbar-nav > .active-trail:nth-child(1) > a {
     background-color: #EEB9B0;
 }
-/* dropdown items */
+/* hover over the dropdown items */
 #navbar nav > .navbar-nav > li:nth-child(1) .dropdown-menu > li > a:hover,
 #navbar nav > .navbar-nav > li:nth-child(1) .dropdown-menu > li > a:focus,
 #navbar nav > .navbar-nav > .active-trail:nth-child(1) .dropdown-menu > li.active > a {
@@ -55,13 +66,11 @@
 
 /* PROJHECTS menu item 
 ***********************/
-nav .menu>li>ul>.dropdown>a {   
-    font-weight: bold;
-}
-nav .menu>li>ul>.dropdown>a,  
 #navbar nav > .navbar-nav > li:nth-child(3) > a {
+    background-color: #CCE9DF;
+}
+#navbar nav > .navbar-nav > li:nth-child(3) > ul > .dropdown > a {
     background-color: #D7E9E3;
-    /*background-color: #D3ECE4;*/
 }
 #navbar nav > .navbar-nav > li:nth-child(3) > a:hover,
 #navbar nav > .navbar-nav > li:nth-child(3) > a:focus
@@ -93,14 +102,22 @@ nav .menu>li>ul>.dropdown>a,
 
 /* SHOP menu item 
 *******************/
+/* the menu item color */
 #navbar nav > .navbar-nav > li:nth-child(5) > a {
-    background-color: #E0EDD0;
+    background-color: #D9EDC0;
 }
+/* hover over the menu item */
 #navbar nav > .navbar-nav > li:nth-child(5) > a:hover,
 #navbar nav > .navbar-nav > li:nth-child(5) > a:focus,
 #navbar nav > .navbar-nav > .active:nth-child(5) > a,
 #navbar nav > .navbar-nav > .active-trail:nth-child(5) > a {
-    background-color: #B3D2A1;
+    background-color: #ADD695;
+}
+/* hover over the dropdown items */
+#navbar nav > .navbar-nav > li:nth-child(5) .dropdown-menu > li > a:hover,
+#navbar nav > .navbar-nav > li:nth-child(5) .dropdown-menu > li > a:focus,
+#navbar nav > .navbar-nav > .active-trail:nth-child(5) .dropdown-menu > li.active > a {
+    background-color: #99C87D;
 }
 
 
