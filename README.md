@@ -23,7 +23,12 @@ Replacing the Drupal "sites" folder for the Y Service Club website
 
 #### Localhost installation
 
-[XAMPP](https://www.apachefriends.org/index.html "multiplatform"), [WAMP](http://www.wampserver.com/en/ "Windows"), [MAMP](http://www.mamp.info/en/ "Macintosh")
+Visit drupal.org for suggestions on [Installing Drupal on Windows PCs](https://www.drupal.org/documentation/install/windows) or for [Installing with Microsoft Web Platform Installer](https://www.drupal.org/node/1130898)  
+
+Or try one of these solutions:   
+Linux, Windows or Mac: [XAMPP](https://www.apachefriends.org/index.html "multiplatform"), 
+Windows: [WAMP](http://www.wampserver.com/en/ "Windows"), 
+Mac: [MAMP](http://www.mamp.info/en/ "Macintosh")  
 
 #### Git installation
 
