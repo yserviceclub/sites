@@ -7,8 +7,9 @@ Replacing the Drupal "sites" folder for the Y Service Club website
 > 1.	[Overview](#1-overview)
 > 2.	[Drupal installation](#2-drupal-installation)
 > 3.	[Clone from github](#3-clone-the-repository)
-> 4.	[Restore database](#4-restore-the-database)
-> 5.	[Troubleshooting](#5-if-you-get-errors)
+> 4.	[Redirect to domain root](#4-redirect-to-domain-root)
+> 5.	[Restore database](#5-restore-the-database)
+> 6.	[Troubleshooting](#6-if-you-get-errors)
 
 
 ***
@@ -39,6 +40,7 @@ And you can also use a [GUI](http://git-scm.com/downloads/guis).
 
 I like [drush](https://github.com/drush-ops/drush) but you don't have to use drush.  
 [Windows Install guide](https://www.drupal.org/node/594744), and [configuration guide](https://www.drupal.org/node/1843176)  
+
 
 ---
 ###### 2. DRUPAL INSTALLATION
@@ -72,6 +74,7 @@ Or use any other method to get Drupal up and running in your browser
 The database information will be written to the **settings.php** file and must correspond with the database being used for this installation.   
 
 >The table prefix can make things more complicated so I recommend using 'drup_' same as Godaddy’s database. 
+
 
 ---
 ###### 3. CLONE THE REPOSITORY
@@ -118,13 +121,56 @@ The **sites-backup** folder won't have any effect on the repository or anything 
 
 
 ---
-###### 4. RESTORE THE DATABASE
+###### 4. REDIRECT TO DOMAIN ROOT  
 ---
-4.1 configure file system  
-4.2 enable Backup module  
-4.3 restore database  
+**NB: These instructions are specific to redirecting Drupal installed in a sub directory on a Godaddy shared hosting service.**  
+There is a Redirects option in the Godaddy cpanel intended for redirecting entire domains but which might be able to redirect sub directories.    
+  
+4.1 root .htaccess  
+4.2 drupal .htaccess  
+4.3 settings.php  
 
-#### 4.1 Configure the file system
+#### 4.1 Create or edit the domain's **.htaccess** file 
+The file needs to be  in the domain's web root folder (ie: **~/www** [or] **~/html_public**)  
+Place the following code:  
+```
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !=/favicon.ico
+# Serve Drupal from sub directory "~/website" 
+RewriteRule (.*) website/$1 [L]
+RewriteRule ^(.*)$ index.php?q=$1 [L,QSA]
+</IfModule>
+```
+#### 4.2 Edit Drupal's **.htaccess** file
+The file can be found in the Drupal root folder (ie: **~/drupal** [or] **~/website**)  
+Make sure these lines appear in the file and that the 4th line is commented:  
+```
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !=/favicon.ico
+# RewriteRule ^ index.php [L]
+RewriteRule ^(.*)$ index.php?q=$1 [L,QSA]
+
+```
+#### 4.3 Set $base_url in **settings.php** 
+This file is found in **~/sites/default**  
+Uncomment this line and make sure it points to the domain root:
+```
+$base_url = 'http://yservice.ca';  // NO trailing slash!
+```
+
+
+---
+###### 5. RESTORE THE DATABASE
+---
+5.1 configure file system  
+5.2 enable Backup module  
+5.3 restore database  
+
+#### 5.1 Configure the file system
 You need to set the private files path for the Backup and Migrate module to work.
 Login to Drupal and find:
 ```
@@ -135,7 +181,7 @@ Set the private file system path to:
 sites/default/private
 ```
 
-#### 4.2 enable the Backup and Migrate module
+#### 5.2 enable the Backup and Migrate module
 You can find it near the bottom of the list. Don't forget to save.
 ```
 administration » modules 
@@ -145,7 +191,7 @@ Or you can use Drush
 drush en -y backup_migrate
 ```
 
-#### 4.3 restore database
+#### 5.3 restore database
 You can now restore the latest saved backup files
 ```
 administration » configuration » system » backup and migrate
@@ -153,7 +199,7 @@ administration » configuration » system » backup and migrate
 
 
 ---
-###### 5. IF YOU GET ERRORS
+###### 6. IF YOU GET ERRORS
 ---
 #### Most problems will likely be due to the settings.php not corresponding to the database.  
 >For example, you can't install Drupal without a database nor settings.php file.  
