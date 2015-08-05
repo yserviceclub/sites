@@ -11,15 +11,25 @@
 
 /* Sticky footer styles
 -------------------------------------------------- */
+html.overlay-open body.html.toolbar-drawer {
+    /*margin-top: 70px !important;*/
+}
 
 html {
   min-height: 100%;
   height: 100%;
 }
+
 body {
   min-height: 98.5%;
   padding-bottom: 200px;
 }
+
+/* make footer stay below body when editing a node */
+html.overlay-open .footer {
+  position: relative;
+}
+/* sticky footer */
 .footer {
 	border: none;
 	text-align: center;
@@ -30,7 +40,6 @@ body {
   width: 100%;
   height: 200px;
 }
-
 
 .footer .region-footer {
   display: block;

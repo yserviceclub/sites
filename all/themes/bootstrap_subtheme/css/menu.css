@@ -56,6 +56,10 @@ nav > .menu > .dropdown > .dropdown-menu > .dropdown > .dropdown-menu {
 	/*box-shadow: 0 15px 60px -30px rgba(0, 0, 0, 0.2);*/
 	box-shadow: none !important;
 	width: 100%;
+	border: none;
+}
+.dropdown-menu {
+	border:none;
 }
 
 
